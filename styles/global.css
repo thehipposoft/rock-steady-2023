@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'components';
+
+@font-face {
+    font-family: 'Archivo Black';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/ArchivoBlack-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/assets/fonts/Poppins-Medium.ttf');
+}
+
+h1, h2, h3, h4, p, li, button {
+    color: #ffffff;
+}
+
+h1 {
+    font-family: 'Archivo Black';
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+li {
+    font-family: 'Poppins';
+}
+
+@layer components {
+    .btn-primary {
+      @apply flex py-2 px-4 bg-gradient-to-b from-[#B75CFF] to-[#671AE4] transition-all rounded-lg shadow-md font-poppins;
+    }
+}
