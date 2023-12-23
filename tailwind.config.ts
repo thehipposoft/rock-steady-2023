@@ -10,11 +10,10 @@ const config: Config = {
     extend: {
       colors: {
         "primary": "#0D0C26",
+        "text-primary": "#080D26",
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'texture': "url('/assets/bg-textura.png')",
       },
     },
     fontFamily: {
