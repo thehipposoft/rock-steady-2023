@@ -1,6 +1,7 @@
 import "../styles/global.css";
 //Components
 import CTABanner from "@/components/CTA-banner";
+import Footer from "@/components/Footer";
 import HowWorks from "@/components/HowWorks";
 import Mission from "@/components/Mission";
 import Navigation from "@/components/navigation";
@@ -18,6 +19,7 @@ export default function Home() {
       <Values />
       <Mission />
       <CTABanner />
+      <Footer />
     </main>
   )
 }

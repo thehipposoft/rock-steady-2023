@@ -11,6 +11,8 @@ const config: Config = {
       colors: {
         "primary": "#0D0C26",
         "text-primary": "#080D26",
+        "gradient-from": "#B75CFF",
+        "gradient-to": "#671AE4",
       },
       backgroundImage: {
         'texture': "url('/assets/bg-textura.png')",
