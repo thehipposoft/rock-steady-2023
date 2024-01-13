@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Mission = () => {
     return (
-        <div className={'p-12'}>
+        <section id={"section-mission"} className={'p-12'}>
             <div className={'max-w-[1300px] mx-auto'}>
                 <h2 className={'text-text-primary text-center mb-20 section-title'}>
                     DIFFERENT <span className={'section-title-empty'}>FROM THE REST</span>
@@ -42,7 +42,7 @@ const Mission = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 };
 

@@ -11,10 +11,18 @@ const Navigation = () => {
                 height={64}
             />
             <ul className={'flex justify-center gap-32'}>
-                <li>Services</li>
-                <li>About</li>
-                <li>How</li>
-                <li>Values</li>
+                <li>
+                    <a href={'#section-services'}>Services</a>
+                </li>
+                <li>
+                    <a href={'#section-how-works'}>How</a>
+                </li>
+                <li>
+                    <a href={'#section-values'}>Values</a>
+                </li>
+                <li>
+                    <a href={'#section-mission'}>About</a>
+                </li>
             </ul>
             <button className={'btn-primary flex'}>
                 Contact us

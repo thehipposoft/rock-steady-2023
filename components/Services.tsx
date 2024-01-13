@@ -4,7 +4,7 @@ import { SERVICES } from "@/constants/services";
 
 const Services = () => {
     return (
-        <section className={'h-screen w-full bg-texture bg-cover bg-no-repeat grid md:grid-cols-2'}>
+        <section id={"section-services"} className={'h-screen w-full bg-texture bg-cover bg-no-repeat grid md:grid-cols-2'}>
             <div className={'grid grid-cols-12 m-auto px-20'}>
                 <div className={'col-span-12'}>
                     <div className={'flex justify-between items-center mb-6'}>

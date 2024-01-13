@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HowWorks = () => {
     return (
-        <div className={'h-screen grid grid-cols-2 w-full'}>
+        <section id={"section-how-works"} className={'h-screen grid grid-cols-2 w-full'}>
             <div className={'relative'}>
                 <Image
                     alt={'How it works'}
@@ -15,7 +15,7 @@ const HowWorks = () => {
             <div>
                 Carousel
             </div>
-        </div>
+        </section>
     )
 };
 

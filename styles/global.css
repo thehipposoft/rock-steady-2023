@@ -25,6 +25,10 @@
     src: url('/assets/fonts/Poppins-Medium.ttf');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, p, li, button {
     color: #ffffff;
 }
