@@ -55,7 +55,7 @@ const Footer = () => {
                     <a>rocksteadydigital@gmail.com</a>
                     <div className={'flex items-center gap-10 mt-5'}>
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_1601_453)">
+                            <g clipPath="url(#clip0_1601_453)">
                                 <path d="M18.3174 14.0627L19.0119 9.53848H14.6705V6.60254C14.6705 5.36504 15.2768 4.15801 17.2213 4.15801H19.1947V0.306445C19.1947 0.306445 17.4041 0.000976562 15.6916 0.000976562C12.1166 0.000976562 9.77988 2.16816 9.77988 6.09082V9.53926H5.80566V14.0635H9.77988V25.001H14.6705V14.0635L18.3174 14.0627Z" fill="#001847"/>
                             </g>
                             <defs>

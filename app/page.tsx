@@ -1,4 +1,4 @@
-import "../styles/global.css";
+import "../styles/global.scss";
 //Components
 import CTABanner from "@/components/CTA-banner";
 import Footer from "@/components/Footer";

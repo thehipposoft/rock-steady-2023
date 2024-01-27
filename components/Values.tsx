@@ -20,7 +20,7 @@ const Values = () => {
                 {
                     VALUES.map((v, index) => {
                         return (
-                            <div key={`value-${index}`} className={'w-1/3 p-10 flex flex-col items-center'}>
+                            <div key={`value-${index}`} className={'group w-1/3 p-10 flex flex-col items-center hover:scale-110 transition-all cursor-pointer'}>
                                 <div className={'bg-[#b40fe71a] rounded-full p-3 icon-border h-24 w-24 mb-4'}>
                                     {v.icon}
                                 </div>

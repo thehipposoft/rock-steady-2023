@@ -24,8 +24,8 @@ const Mission = () => {
                         <Image
                             alt={'Kamlesh LAD - Founder'}
                             src={'/assets/kam-home.png'}
-                            width={400}
-                            height={400}
+                            width={300}
+                            height={300}
                             className={'rounded-md'}
                         />
                         <div className={'p-10'}>

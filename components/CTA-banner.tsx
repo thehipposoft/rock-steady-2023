@@ -2,7 +2,7 @@ import React from "react";
 
 const CTABanner = () => {
     return (
-        <div className={'px-10 py-14 flex bg-gradient-to-b from-gradient-from to-gradient-to w-full max-w-[1300px] rounded-md justify-between items-center'}>
+        <div className={'px-10 py-14 flex bg-gradient-to-b from-gradient-from to-gradient-to w-full max-w-[1300px] rounded-md justify-between items-center my-10'}>
             <div>
                 <h3 className={'section-title text-white text-5xl mb-2'}>
                     READY TO TALK ABOUT

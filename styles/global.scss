@@ -4,6 +4,10 @@
 
 @import 'components';
 
+/*Glide*/
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 @font-face {
     font-family: 'Archivo Black';
     font-style: normal;
@@ -50,6 +54,14 @@ li {
 }
 
 @layer components {
+    main {
+        scroll-snap-type: y mandatory;
+    }
+
+    section {
+        scroll-snap-align: start;
+    }
+
     .btn-primary {
       @apply flex py-2 px-4 bg-gradient-to-b from-gradient-from to-gradient-to transition-all rounded-lg shadow-md font-poppins;
     }
@@ -72,6 +84,24 @@ li {
     .text-white-stroke {
         -webkit-text-stroke: 2px #ffffff;
     }
+
+    /*Dialog*/
+        dialog {
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.4s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        dialog[open] {
+            opacity: 1;
+            pointer-events: inherit;
+        }
+        dialog::backdrop {
+            background-color: rgba(0,0,255, 0.2);
+        }
 }
 
 .icon-border {
@@ -130,4 +160,9 @@ li {
     transition:
       transform 0.3s linear 0s,
       border-left-width 0s linear 0.35s;
+}
+
+.glide__slide--active + *,
+.glide__slide--active ~ * {
+  //background-color: green;
 }
