@@ -1,9 +1,11 @@
 "use client"
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useRef} from "react";
 import Navigation from "./navigation";
 
 const VideoBanner = () => {
-    const [showSkip, setShowSkip] = useState(false);
+    const videoRef = useRef<HTMLVideoElement>(null);
+    const [showSkip, setShowSkip] = useState<boolean>(false);
+    const [videoFinished, setVideoFinished] = useState<boolean>(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -16,22 +18,35 @@ const VideoBanner = () => {
     }, []);
 
     const handleVideoEnd = () => {
-        window.location.href = "/#section-services";
+        if(videoFinished) {
+            window.location.href = "/#section-services";
+        }
+
+        const video = videoRef.current;
+
+        if (video) {
+            video.currentTime = 0;
+            video.play();
+        }
+        setVideoFinished(true);
     };
 
     return (
         <section className={'relative h-screen flex'}>
             <Navigation />
             <video
+                ref={videoRef}
                 autoPlay
-                loop
                 muted
                 className={'object-cover'}
                 onEnded={handleVideoEnd}
             >
                 <source src="https://res.cloudinary.com/du31j65g6/video/upload/v1703040232/new-branding-video-comp_kx414d.mp4" type="video/mp4" />
             </video>
-            <a href={'/#section-services'} className={`${showSkip ? 'opacity-100' : 'opacity-0'} transition-all absolute text-xl bottom-11 translate-x-[50%] right-[50%] flex cursor-pointer items-center`}>
+            <a
+                href={'/#section-services'}
+                onClick={() => setVideoFinished(true)}
+                className={`${showSkip ? 'opacity-100' : 'opacity-0'} transition-all duration-300 absolute text-xl bottom-11 translate-x-[50%] right-[50%] flex cursor-pointer items-center`}>
                 <p className={'text-white w-full hover:underline text-sm'}>
                     skip video
                 </p>

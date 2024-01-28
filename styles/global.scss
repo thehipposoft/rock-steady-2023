@@ -162,7 +162,10 @@ li {
       border-left-width 0s linear 0.35s;
 }
 
-.glide__slide--active + *,
-.glide__slide--active ~ * {
-  //background-color: green;
+// How works styles
+.selected-icon svg {
+    path, line {
+        stroke: #5a0220;
+        fill: #5a0220;
+    }
 }

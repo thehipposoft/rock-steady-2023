@@ -16,7 +16,7 @@ const Navigation = () => {
     }, []);
 
     return (
-        <nav className={`${showNav ? 'opacity-100' : 'opacity-0'} transition-all flex w-full justify-between items-center gap-20 bg-primary px-10 py-4 absolute z-10`}>
+        <nav className={`${showNav ? 'opacity-100' : 'opacity-0'} duration-300 transition-all flex w-full justify-between items-center gap-20 bg-primary px-10 py-4 absolute z-10`}>
             <Image
                 alt={'RockSteady Logo'}
                 src={'/assets/logo.png'}
