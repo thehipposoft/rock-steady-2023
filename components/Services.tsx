@@ -27,11 +27,11 @@ const Services = () => {
                         alt={'SM Marketing & Analytics'}
                     />
                 </div>
-                <div className={'p-20 col-span-8 mt-8'}>
-                    <h2 className={'lg:text-5xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
+                <div className={'p-20 col-span-8 mt-8 flex flex-col justify-center'}>
+                    <h2 className={'lg:text-6xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         SM Marketing & Analytics
                     </h2>
-                    <h5 className={'bold mb-2 text-xl font-poppins'}>
+                    <h5 className={'font-poppins-bold mb-6 text-xl'}>
                         Raise Your Profile & Measure Success
                     </h5>
                     <p className={'text-sm mb-3'}>
@@ -59,11 +59,11 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                         alt={'People, Culture and Change'}
                     />
                 </div>
-                <div className={'p-20 col-span-8 mt-8'}>
-                    <h2 className={'lg:text-5xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
+                <div className={'p-20 col-span-8 mt-8 flex flex-col justify-center'}>
+                    <h2 className={'lg:text-6xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         People, Culture and Change
                     </h2>
-                    <h5 className={'bold mb-4 text-xl font-poppins'}>
+                    <h5 className={'mb-6 text-xl font-poppins-bold'}>
                         Empower People through Growth
                     </h5>
                     <p className={'text-sm mb-3'}>
@@ -90,11 +90,11 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                         alt={'Digital Brand Competitor Analysis'}
                     />
                 </div>
-                <div className={'p-20 col-span-8 mt-8'}>
+                <div className={'p-20 col-span-8 mt-8 flex flex-col justify-center'}>
                     <h2 className={'lg:text-5xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         Digital Brand Competitor Analysis
                     </h2>
-                    <h5 className={'bold mb-2 text-xl font-poppins'}>
+                    <h5 className={'mb-6 text-xl font-poppins-bold'}>
                         Manifest your digital strategy to realise benefits
                     </h5>
                     <p className={'text-sm mb-3'}>
@@ -122,11 +122,11 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                         alt={'Digital Transformation & Program Management'}
                     />
                 </div>
-                <div className={'p-20 col-span-8 mt-8'}>
+                <div className={'p-20 col-span-8 mt-8 flex flex-col justify-center'}>
                     <h2 className={'lg:text-5xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         Digital Transformation & Program Management
                     </h2>
-                    <h5 className={'bold mb-2 text-xl font-poppins'}>
+                    <h5 className={'mb-6 text-xl font-poppins-bold'}>
                         Manifest your digital strategy to realise benefits
                     </h5>
                     <p className={'text-sm mb-3'}>
@@ -154,11 +154,11 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                         alt={'Blockchain (Minting, Staking & Mining)'}
                     />
                 </div>
-                <div className={'p-20 col-span-8 mt-8'}>
-                    <h2 className={'lg:text-5xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
+                <div className={'p-20 col-span-8 mt-8 flex flex-col justify-center'}>
+                    <h2 className={'lg:text-7xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         Blockchain
                     </h2>
-                    <h5 className={'bold mb-2 text-xl font-poppins'}>
+                    <h5 className={'mb-6 text-xl font-poppins-bold'}>
                         Seize the opportunity with this emerging technology to help grow your business.
                     </h5>
                     <p className={'text-sm mb-3'}>

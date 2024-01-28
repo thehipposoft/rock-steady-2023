@@ -22,6 +22,7 @@ const config: Config = {
       'archivo-black': ['Archivo Black'],
       'poppins': ['Poppins'],
       'poppins-bold': ['Poppins-Bold'],
+      'poppins-extrabold': ['Poppins-extraBold'],
     }
   },
   plugins: [],

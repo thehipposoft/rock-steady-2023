@@ -24,7 +24,7 @@ const Values = () => {
                                 <div className={'bg-[#b40fe71a] rounded-full p-3 icon-border h-24 w-24 mb-4'}>
                                     {v.icon}
                                 </div>
-                                <h4 className={'text-2xl text-text-primary font-poppins-bold mb-3'}>
+                                <h4 className={'text-2xl text-text-primary font-poppins-extrabold mb-3'}>
                                     {v.title}
                                 </h4>
                                 <p className={'text-center text-[13px]'}>

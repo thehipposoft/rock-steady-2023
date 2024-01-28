@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
+
+
 @import 'components';
 
 /*Glide*/
@@ -23,10 +27,17 @@
 }
 
 @font-face {
+    font-family: 'Poppins-extraBold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/assets/fonts/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
     font-family: 'Poppins-Bold';
     font-style: normal;
     font-weight: 900;
-    src: url('/assets/fonts/Poppins-Medium.ttf');
+    src: url('/assets/fonts/Poppins-ExtraBold.ttf');
 }
 
 html {
@@ -53,15 +64,16 @@ li {
     font-family: 'Poppins';
 }
 
+body, html {
+    scroll-snap-type: y mandatory;
+}
+
+.main-container section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
 @layer components {
-    main {
-        scroll-snap-type: y mandatory;
-    }
-
-    section {
-        scroll-snap-align: start;
-    }
-
     .btn-primary {
       @apply flex py-2 px-4 bg-gradient-to-b from-gradient-from to-gradient-to transition-all rounded-lg shadow-md font-poppins;
     }
@@ -168,4 +180,26 @@ li {
         stroke: #5a0220;
         fill: #5a0220;
     }
+}
+
+//Scroll bar
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #80808021;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #5a0220;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black;
 }

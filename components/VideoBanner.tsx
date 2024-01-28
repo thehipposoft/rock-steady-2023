@@ -4,6 +4,7 @@ import Navigation from "./navigation";
 
 const VideoBanner = () => {
     const videoRef = useRef<HTMLVideoElement>(null);
+    const sectionRef = useRef<HTMLElement>(null);
     const [showSkip, setShowSkip] = useState<boolean>(false);
     const [videoFinished, setVideoFinished] = useState<boolean>(false);
 
@@ -14,6 +15,30 @@ const VideoBanner = () => {
 
         return () => {
             clearTimeout(timer);
+        };
+    }, []);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const section = sectionRef.current;
+            if (section) {
+                const rect = section.getBoundingClientRect();
+
+                if (
+                    rect.bottom <= 0 ||
+                    rect.right <= 0 ||
+                    rect.left >= window.innerWidth ||
+                    rect.top >= window.innerHeight
+                ) {
+                    setVideoFinished(true);
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
@@ -32,7 +57,7 @@ const VideoBanner = () => {
     };
 
     return (
-        <section className={'relative h-screen flex'}>
+        <section ref={sectionRef} className={'relative h-screen flex'}>
             <Navigation />
             <video
                 ref={videoRef}

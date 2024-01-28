@@ -25,8 +25,8 @@ const Carousel = ({
                 {
                     items.map((item, index) => {
                         return (
-                            <div>
-                                <h3 className={`text-primary text-3xl text-center mb-4 transition-all duration-200 top-0 ${index === selectedServiceIndex ? 'opacity-100' : 'opacity-0 absolute -z-10'}`}>
+                            <div key={`${item.title}-${index}`}>
+                                <h3 className={`text-primary font-poppins-bold text-3xl text-center mb-4 transition-all duration-200 top-0 ${index === selectedServiceIndex ? 'opacity-100' : 'opacity-0 absolute -z-10'}`}>
                                     {items[selectedServiceIndex].title}
                                 </h3>
                                 <div className={`text-center mb-10 transition-all duration-200 bottom-0 ${index === selectedServiceIndex ? 'opacity-100' : 'opacity-0 absolute -z-10'}`}>
@@ -45,11 +45,14 @@ const Carousel = ({
                 items.map((item, index) => {
                     return (
                         <div
+                            key={`${item.order}-${index}`}
                             className={`flex flex-col items-center transition-all duration-300 w-full ${index === selectedServiceIndex ? 'selected-icon w-[120%] p-3 border-b-2 border-[#5a0220]' : ''}`}
                             onMouseEnter={() => setSelectedServiceIndex(index)}
                         >
-                            {item.icon}
-                            <h3 className={`text-primary text-center`}>
+                            <span className={` transition-all duration-300 ${index === selectedServiceIndex ? ' scale-125' : ''}`}>
+                                {item.icon}
+                            </span>
+                            <h3 className={`text-primary text-center ${index === selectedServiceIndex ? ' text-xl' : ''}`}>
                                 {item.title}
                             </h3>
                         </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Mission = () => {
     return (
-        <section id={"section-mission"} className={'p-12'}>
+        <section id={"section-mission"} className={'p-12 h-screen'}>
             <div className={'max-w-[1300px] mx-auto'}>
                 <h2 className={'text-text-primary text-center mb-20 section-title'}>
                     DIFFERENT <span className={'section-title-empty'}>FROM THE REST</span>
@@ -33,7 +33,7 @@ const Mission = () => {
                                 KAMLESH LAD - FOUNDER
                             </h5>
                             <p className={'mb-3'}>
-                                I can help you reach your financial goals so you can focus on the more important things in life.
+                                I can help you reach your digital goals so you can focus on the more important things in life.
                             </p>
                             <button className={'btn-primary w-full justify-center'}>
                                 Get to know me
