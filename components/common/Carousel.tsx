@@ -20,8 +20,8 @@ const Carousel = ({
     setSelectedServiceIndex,
 }:CarousePropsTypes) => {
     return (
-        <div className={'flex flex-col justify-center items-center p-10'}>
-            <div className={'min-h-[13rem]'}>
+        <div className={'flex flex-col justify-center items-center p-4 md:p-10 h-fit md:h-auto'}>
+            <div className={'min-h-[8rem] md:min-h-[13rem]'}>
                 {
                     items.map((item, index) => {
                         return (

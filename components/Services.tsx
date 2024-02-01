@@ -173,8 +173,8 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
     ];
 
     return (
-        <section id={"section-services"} className={'h-screen w-full bg-texture bg-cover bg-no-repeat grid md:grid-cols-2'}>
-            <div className={'grid grid-cols-12 m-auto px-20'}>
+        <section id={"section-services"} className={'md:h-screen w-full bg-texture bg-cover bg-no-repeat grid grid-cols-1 md:grid-cols-2'}>
+            <div className={'grid grid-cols-12 m-auto px-4 md:px-20'}>
                 <div className={'col-span-12'}>
                     <div className={'flex justify-between items-center mb-6'}>
                         <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">

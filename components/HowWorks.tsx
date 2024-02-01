@@ -91,7 +91,7 @@ const HowWorks = () => {
     const [selectedServiceIndex, setSelectedServiceIndex] = useState<number>(2);
 
     return (
-        <section id={"section-how-works"} className={'h-screen grid grid-cols-2 w-full'}>
+        <section id={"section-how-works"} className={'h-screen grid grid-cols-1 md:grid-cols-2 w-full'}>
             <div className={'relative'}>
                 {
                     HOW_WORKS.map((element, index) =>

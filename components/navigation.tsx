@@ -23,7 +23,7 @@ const Navigation = () => {
                 width={118}
                 height={64}
             />
-            <ul className={'flex justify-center gap-32'}>
+            <ul className={'justify-center gap-32 hidden md:flex'}>
                 <li>
                     <a href={'#section-services'}>Services</a>
                 </li>
@@ -37,7 +37,7 @@ const Navigation = () => {
                     <a href={'#section-mission'}>About</a>
                 </li>
             </ul>
-            <button className={'btn-primary flex'}>
+            <button className={'btn-primary hidden md:flex'}>
                 Contact us
             </button>
         </nav>

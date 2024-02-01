@@ -10,8 +10,8 @@ const Footer = () => {
                 src={'/assets/footer-background.png'}
                 className={'!h-[120%]'}
             />
-            <div className={'max-w-[1300px] py-10 mx-auto'}>
-                <div className={'grid grid-cols-4 gap-6 max-w-[1300px]'}>
+            <div className={'max-w-[1300px] px-4 md:px-0 py-6 md:py-10 mx-auto'}>
+                <div className={'grid md:grid-cols-4 gap-6 max-w-[1300px]'}>
                     <div>
                         <Image
                             alt={'RockSteady Logo'}

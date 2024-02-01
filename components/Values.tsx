@@ -16,7 +16,7 @@ const Values = () => {
                     <path d="M14.3714 1L13.1333 9.16129L1 11.8817V13.3656L13.1333 16.3333L14.3714 24L16.1048 16.3333L27 13.3656V11.8817L16.1048 9.16129L14.3714 1Z" fill="#080D26" stroke="black"/>
                 </svg>
             </div>
-            <div className={'flex flex-wrap justify-center md:p-2 2xl:p-6 flex-grow'}>
+            <div className={'hidden md:flex flex-wrap justify-center md:p-2 2xl:p-6 flex-grow'}>
                 {
                     VALUES.map((v, index) => {
                         return (

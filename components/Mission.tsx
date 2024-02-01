@@ -4,12 +4,12 @@ import Link from "next/link";
 
 const Mission = () => {
     return (
-        <section id={"section-mission"} className={'p-12 h-screen'}>
+        <section id={"section-mission"} className={'p-4 md:p-12 md:h-screen'}>
             <div className={'max-w-[1300px] mx-auto'}>
-                <h2 className={'text-text-primary text-center 2xl:mb-28 mb-10 section-title'}>
+                <h2 className={'text-text-primary text-center 2xl:mb-28 mb-6 md:mb-10 section-title'}>
                     DIFFERENT <span className={'section-title-empty'}>FROM THE REST</span>
                 </h2>
-                <div className={'flex justify-between'}>
+                <div className={'flex justify-between flex-wrap'}>
                     <div className={'max-w-[42rem]'}>
                         <h4 className={'text-text-primary mb-4 text-4xl font-poppins-bold'}>
                             Our mission
