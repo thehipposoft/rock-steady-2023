@@ -4,7 +4,7 @@ import { VALUES } from "@/constants/values";
 const Values = () => {
     return (
         <section id={"section-values"} className={'min-h-screen w-full bg-texture bg-cover bg-no-repeat p-10 flex flex-col'}>
-            <div className={'flex items-center justify-center mb-10 mt-10'}>
+            <div className={'flex items-center justify-center 2xl:mb-10 md:mb-4'}>
                 <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.3714 1L13.1333 9.16129L1 11.8817V13.3656L13.1333 16.3333L14.3714 24L16.1048 16.3333L27 13.3656V11.8817L16.1048 9.16129L14.3714 1Z" fill="#080D26" stroke="black"/>
                 </svg>
@@ -16,11 +16,11 @@ const Values = () => {
                     <path d="M14.3714 1L13.1333 9.16129L1 11.8817V13.3656L13.1333 16.3333L14.3714 24L16.1048 16.3333L27 13.3656V11.8817L16.1048 9.16129L14.3714 1Z" fill="#080D26" stroke="black"/>
                 </svg>
             </div>
-            <div className={'flex flex-wrap justify-center p-6 flex-grow'}>
+            <div className={'flex flex-wrap justify-center md:p-2 2xl:p-6 flex-grow'}>
                 {
                     VALUES.map((v, index) => {
                         return (
-                            <div key={`value-${index}`} className={'group w-1/3 p-10 flex flex-col items-center hover:scale-110 transition-all cursor-pointer'}>
+                            <div key={`value-${index}`} className={'group w-1/3 md:p-6 2xl:p-10 flex flex-col items-center hover:scale-110 transition-all'}>
                                 <div className={'bg-[#b40fe71a] rounded-full p-3 icon-border h-24 w-24 mb-4'}>
                                     {v.icon}
                                 </div>

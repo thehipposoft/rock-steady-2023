@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         "primary": "#0D0C26",
+        "purple": "#6A1CE5",
         "text-primary": "#080D26",
         "gradient-from": "#B75CFF",
         "gradient-to": "#671AE4",

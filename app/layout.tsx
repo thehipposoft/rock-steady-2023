@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import "../styles/global.scss";
 import './globals.css';
 import GoogleAnalytics from './GoogleAnalytics';
 
