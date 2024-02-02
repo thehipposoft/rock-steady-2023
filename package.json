@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.0",
+    "@types/glidejs__glide": "^3.6.5",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",

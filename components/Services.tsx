@@ -1,7 +1,10 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import Modal from "./common/Modal";
+import Glide from 'react-glidejs';
+
+import 'react-glidejs/dist/index.css';
 
 type Service = {
     title: string,
@@ -11,6 +14,8 @@ type Service = {
 }
 
 const Services = () => {
+    const gliderRef = useRef(null);
+
     const [openModal, setOpenModal] = useState<boolean>(false);
     const [modalIndex, setModalIndex] = useState<number>(0);
 
@@ -20,14 +25,15 @@ const Services = () => {
             description: 'We help you to grow your business with our SM Marketing & Analytics services.',
             bgImage: '/assets/services/marketing.png',
             modalContent: <div className={'grid grid-cols-12 h-full'}>
-                <div className={'col-span-4 relative'}>
+                <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
                     <Image
                         src={'/assets/services/marketing-modal.png'}
                         fill
                         alt={'SM Marketing & Analytics'}
+                        className={'object-cover'}
                     />
                 </div>
-                <div className={'p-20 col-span-8 mt-8 flex flex-col justify-center'}>
+                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
                     <h2 className={'lg:text-6xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         SM Marketing & Analytics
                     </h2>
@@ -52,14 +58,15 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
             description: 'We help you to grow your business with our SM Marketing & Analytics services.',
             bgImage: '/assets/services/people.png',
             modalContent: <div className={'grid grid-cols-12 h-full'}>
-                <div className={'col-span-4 relative'}>
+                <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
                     <Image
                         src={'/assets/services/people-culture-change-modal.png'}
                         fill
                         alt={'People, Culture and Change'}
+                        className={'object-cover'}
                     />
                 </div>
-                <div className={'p-20 col-span-8 mt-8 flex flex-col justify-center'}>
+                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
                     <h2 className={'lg:text-6xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         People, Culture and Change
                     </h2>
@@ -83,14 +90,15 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
             description: 'We help you to grow your business with our SM Marketing & Analytics services.',
             bgImage: '/assets/services/digital-brand.png',
             modalContent:<div className={'grid grid-cols-12 h-full'}>
-                <div className={'col-span-4 relative'}>
+                <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
                     <Image
                         src={'/assets/services/competitor-modal.png'}
                         fill
                         alt={'Digital Brand Competitor Analysis'}
+                        className={'object-cover'}
                     />
                 </div>
-                <div className={'p-20 col-span-8 mt-8 flex flex-col justify-center'}>
+                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
                     <h2 className={'lg:text-5xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         Digital Brand Competitor Analysis
                     </h2>
@@ -115,14 +123,15 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
             description: 'We help you to grow your business with our SM Marketing & Analytics services.',
             bgImage: '/assets/services/digital-transformation.png',
             modalContent: <div className={'grid grid-cols-12 h-full'}>
-                <div className={'col-span-4 relative'}>
+                <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
                     <Image
                         src={'/assets/services/digital-transformation-modal-comp.png'}
                         fill
                         alt={'Digital Transformation & Program Management'}
+                        className={'object-cover'}
                     />
                 </div>
-                <div className={'p-20 col-span-8 mt-8 flex flex-col justify-center'}>
+                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
                     <h2 className={'lg:text-5xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         Digital Transformation & Program Management
                     </h2>
@@ -147,14 +156,15 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
             description: 'We help you to grow your business with our SM Marketing & Analytics services.',
             bgImage: '/assets/services/blockchain.png',
             modalContent: <div className={'grid grid-cols-12 h-full'}>
-                <div className={'col-span-4 relative'}>
+                <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
                     <Image
                         src={'/assets/services/blockchain-modal.png'}
                         fill
                         alt={'Blockchain (Minting, Staking & Mining)'}
+                        className={'object-cover'}
                     />
                 </div>
-                <div className={'p-20 col-span-8 mt-8 flex flex-col justify-center'}>
+                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
                     <h2 className={'lg:text-7xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         Blockchain
                     </h2>
@@ -173,7 +183,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
     ];
 
     return (
-        <section id={"section-services"} className={'md:h-screen w-full bg-texture bg-cover bg-no-repeat grid grid-cols-1 md:grid-cols-2'}>
+        <section id={"section-services"} className={'md:h-screen w-full bg-texture bg-cover bg-no-repeat grid grid-cols-1 md:grid-cols-2 py-8 md:py-0'}>
             <div className={'grid grid-cols-12 m-auto px-4 md:px-20'}>
                 <div className={'col-span-12'}>
                     <div className={'flex justify-between items-center mb-6'}>
@@ -195,7 +205,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                 </div>
                 <div className={'col-span-1'} />
                 <div className={'col-span-11'}>
-                    <p className={'font-poppins-bold text-2xl mb-6'}>
+                    <p className={'font-poppins-bold text-xl md:text-2xl mb-6'}>
                         Innovative Digital Solutions to Rock your World!
                     </p>
                     <p className={'mb-6'}>
@@ -207,7 +217,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                 </div>
             </div>
 
-            <div className={'flex flex-col gap-5'}>
+            <div className={'flex-col gap-5 hidden md:flex'}>
                 {
                     SERVICES.map((s, index) => {
                         return (
@@ -233,6 +243,40 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     })
                 }
             </div>
+            <div className={'glide-carousel md:hidden my-6'}>
+                <Glide
+                    ref={gliderRef}
+                    throttle={0}
+                    type={"carousel"}
+                    perView={1}
+                >
+                    {
+                        SERVICES.map((s, index) => {
+                            return (
+                                <div
+                                    key={`${s.title}-${index}`}
+                                    className={'group relative rounded-md bg-black cursor-pointer transition-all flex h-[12rem]'}
+                                    onClick={() => {
+                                        setModalIndex(index);
+                                        setOpenModal(true);
+                                    }}
+                                >
+                                    <Image
+                                        alt={s.title}
+                                        src={s.bgImage}
+                                        fill
+                                        className={'rounded-md object-cover transition-all group-hover:brightness-50'}
+                                    />
+                                    <h3 className={'absolute bottom-3 left-3 flex'}>
+                                        {s.title} <span className={'group-hover:opacity-100 ml-2 opacity-0 transition-all'}>... Read more</span>
+                                    </h3>
+                                </div>
+                            )
+                        })
+                    }
+                </Glide>
+            </div>
+
             <Modal open={openModal} onClose={() => setOpenModal(false)}>
                 {SERVICES[modalIndex].modalContent}
             </Modal>

@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap');
 
@@ -64,13 +70,15 @@ li {
     font-family: 'Poppins';
 }
 
-body, html {
-    scroll-snap-type: y mandatory;
-}
+@media (min-width: 600px) {
+    body, html {
+        scroll-snap-type: y mandatory;
+    }
 
-.main-container section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    .main-container section {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
 }
 
 @layer components {
@@ -86,10 +94,10 @@ body, html {
         color: transparent;
     }
     .subsection-title {
-        @apply text-4xl font-bold text-text-primary font-archivo-black;
+        @apply text-2xl md:text-4xl font-bold text-text-primary font-archivo-black;
     }
     .subsection-title-empty {
-        @apply text-6xl font-archivo-black;
+        @apply text-4xl md:text-6xl font-archivo-black;
         -webkit-text-stroke: 2px #080D26;
         color: transparent;
     }
@@ -98,22 +106,22 @@ body, html {
     }
 
     /*Dialog*/
-        dialog {
-            pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.4s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        dialog[open] {
-            opacity: 1;
-            pointer-events: inherit;
-        }
-        dialog::backdrop {
-            background-color: rgba(0,0,255, 0.2);
-        }
+    dialog {
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.4s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    dialog[open] {
+        opacity: 1;
+        pointer-events: inherit;
+    }
+    dialog::backdrop {
+        background-color: rgba(0,0,255, 0.2);
+    }
 }
 
 .icon-border {

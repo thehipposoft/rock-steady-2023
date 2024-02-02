@@ -214,6 +214,11 @@
   dependencies:
     tslib "^2.4.0"
 
+"@types/glidejs__glide@^3.6.5":
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/@types/glidejs__glide/-/glidejs__glide-3.6.5.tgz#6743dcf12da5b41d60ca9899dc033362624ce101"
+  integrity sha512-OUjzveIu+tiK5VvyPh6jTBJ/vH6+vC+XWzC2KJzpgUW8uancMJBa7R+BlXuvtSPdLw/pQForVasy0fm1D7JWOQ==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@types/json5/-/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
