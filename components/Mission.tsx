@@ -6,7 +6,7 @@ const Mission = () => {
     return (
         <section id={"section-mission"} className={'p-4 md:p-12 md:h-screen'}>
             <div className={'max-w-[1300px] mx-auto'}>
-                <h2 className={'text-text-primary text-center 2xl:mb-28 mb-6 md:mb-10 section-title'}>
+                <h2 className={'text-text-primary text-center 2xl:mb-28 mb-6 md:mb-10 section-title mt-6 md:mt-0'}>
                     DIFFERENT <span className={'section-title-empty'}>FROM THE REST</span>
                 </h2>
                 <div className={'flex justify-between flex-wrap'}>
@@ -21,7 +21,7 @@ const Mission = () => {
                             We create a fun and energetic environment and work with our clients and partner organisations to deliver outstanding results. We are passionate about helping people and companies succeed through continuous improvement.
                         </p>
                     </div>
-                    <div className={'transition-all rounded-md shadow-md text-center hover:shadow-xl max-w-[24rem]'}>
+                    <div className={'transition-all rounded-md shadow-md text-center hover:shadow-xl max-w-[24rem] mt-6 md:mt-0'}>
                         <Image
                             alt={'Kamlesh LAD - Founder'}
                             src={'/assets/kam-home.png'}

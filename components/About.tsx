@@ -2,14 +2,12 @@
 "use client"
 import React from 'react';
 import { ABOUT_TEXT, COMPANIES } from '../constants/about';
-import Router from 'next/router';
-import Link from 'next/link';
 import Image from 'next/image';
 
 const About = () => {
     return(
         <div className={'flex sm:flex-row flex-col bg-white md:h-screen relative'}>
-            <svg className={'absolute top-0 right-0'} width="612" height="461" viewBox="0 0 612 461" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={'absolute top-0 right-0 hidden md:block'} width="612" height="461" viewBox="0 0 612 461" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M137.78 -85.4503C76.9675 -128.163 85.6592 -220.804 153.355 -251.46L1090.35 -675.778C1254.1 -749.932 1437.33 -621.1 1422.95 -441.918L1390.52 -37.7909L815.217 222.736C725.293 263.458 620.544 253.63 539.764 196.893L137.78 -85.4503Z" fill="url(#paint0_linear_1710_360)"/>
                 <mask id="mask0_1710_360" maskUnits="userSpaceOnUse" x="0" y="-681" width="1391" height="963">
                 <path d="M0.181641 -182.095L1099.7 -680.009L1390.52 -37.7909L696.117 276.67C680.002 283.968 661.229 282.207 646.753 272.039L0.181641 -182.095Z" fill="#F9F8FF"/>
@@ -29,7 +27,7 @@ const About = () => {
                 </defs>
             </svg>
 
-            <svg className={'absolute bottom-0'} width="811" height="504" viewBox="0 0 811 504" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={'absolute bottom-0 max-w-full hidden md:block'} width="811" height="504" viewBox="0 0 811 504" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M643.742 427.009C698.032 445.192 698.436 521.839 644.34 540.593L-1005.32 1112.5L-1172.72 629.652L-92.3303 255.101C-21.3499 230.493 55.7821 230.087 127.018 253.945L643.742 427.009Z" fill="#F9F8FF"/>
                 <path d="M611.896 434.882C670.145 448.922 674.101 530.275 617.49 549.901L-1372.61 1239.83L-1539.99 757.021L-203.492 293.684C-142.013 272.37 -75.7101 269.146 -12.4533 284.393L611.896 434.882Z" fill="url(#paint0_linear_1710_365)"/>
                 <mask id="mask0_1710_365" maskUnits="userSpaceOnUse" x="-1173" y="236" width="1858" height="877">
@@ -50,10 +48,8 @@ const About = () => {
                 </defs>
             </svg>
 
-            <div
-                className={`w-full flex`}
-            >
-                <div className={'sm:w-1/2 flex flex-col items-center relative justify-center'}>
+            <div className={`w-full flex flex-wrap`}>
+                <div className={'sm:w-1/2 flex flex-col items-center relative justify-center mt-16 md:mt-0'}>
                     <Image
                         alt={'Kamlesh Lad'}
                         src={'/assets/images/KAM_PHOTO2.png'}
@@ -61,7 +57,7 @@ const About = () => {
                         width={600}
                         height={500}
                     />
-                    <div className={'py-6 px-8 md:w-[55%] 2xl:w-[50%] rounded-md absolute bg-purple md:bottom-16 2xl:bottom-40 right-16'}>
+                    <div className={'py-3 md:py-6 px-4 md:px-8 md:w-[55%] 2xl:w-[50%] rounded-md absolute bg-purple md:bottom-16 2xl:bottom-40 md:right-16 w-full -bottom-4'}>
                         <h4 className={'text-white font-poppins-bold'}>
                             Digital Transformation Leader - Agile Program Delivery
                         </h4>
@@ -71,26 +67,28 @@ const About = () => {
                             technologies and cultural change”.
                         </p>
                         <a
-                            className='bg-none pt-4 float-right'
+                            className={'float-right'}
                             href='https://www.linkedin.com/in/kamleshlad/'
                             target="_blank"
                             rel="noopener noreferrer">
-                            <img
-                                alt='Linked In icon'
+                            <Image
+                                alt={'Linked In icon'}
+                                width={32}
+                                height={32}
                                 className={'w-[32px] duration-300 hover:scale-110'}
-                                src='/assets/images/about/linkedin.svg'
+                                src={'/assets/images/about/linkedin.svg'}
                             />
                         </a>
                     </div>
                 </div>
-                <div className={'sm:w-1/2 flex flex-col justify-center items-center sm:items-start relative h-fit m-auto'}>
+                <div className={'sm:w-1/2 flex flex-col justify-center items-center sm:items-start md:relative h-fit m-auto'}>
                     <a
                         href={'/#ABOUT'}
-                        className={'absolute flex justify-center duration-300 hover:scale-105 -top-10 right-[14rem]'}
+                        className={'absolute flex justify-center duration-300 hover:scale-105 hover:underline md:right-[14rem] top-6 md:top-2 right-6'}
                     >
                         &#8617; HOME PAGE
                     </a>
-                    <h2 className={'text-4xl font-archivo-black text-text-primary'}>
+                    <h2 className={'text-4xl font-archivo-black text-text-primary mt-10 md:mt-0'}>
                         ABOUT ME
                     </h2>
                     <p className={'pt-6 w-5/6 text-center sm:text-left'}>
@@ -99,13 +97,13 @@ const About = () => {
                     <p className={'mt-5'}>
                         Some of the enterprises I worked for:
                     </p>
-                    <div className='md:flex my-12 items-center grid grid-cols-2 gap-4'>
+                    <div className='md:flex my-12 items-center grid md:grid-cols-2 grid-cols-3 gap-4'>
                         {COMPANIES.map((value, index) =>
                         <a
                             href={value.url}
                             className={'bg-none w-full duration-300 hover:scale-110'}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            target={"_blank"}
+                            rel={"noopener noreferrer"}
                         >
                             <Image
                                 key={index}
