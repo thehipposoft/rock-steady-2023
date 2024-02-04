@@ -57,13 +57,13 @@ const VideoBanner = () => {
     };
 
     return (
-        <section ref={sectionRef} className={'relative h-screen flex'}>
+        <section ref={sectionRef} className={'relative h-screen flex overflow-hidden w-full'}>
             <Navigation />
             <video
                 ref={videoRef}
                 autoPlay
                 muted
-                className={'object-cover'}
+                className={'object-cover w-full'}
                 onEnded={handleVideoEnd}
             >
                 <source src="https://res.cloudinary.com/du31j65g6/video/upload/v1703040232/new-branding-video-comp_kx414d.mp4" type="video/mp4" />

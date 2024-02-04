@@ -41,17 +41,17 @@ const Navigation = () => {
             <button className={'btn-primary hidden md:flex'}>
                 Contact us
             </button>
-            <svg className={'h-[3rem]'} onClick={() => setOpenMobileNav(true)} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={'h-[3rem] md:hidden'} onClick={() => setOpenMobileNav(true)} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_iconCarrier">
-                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     </path>
                 </g>
             </svg>
-            <ul className={`${openMobileNav ? ' translate-x-[-100%]' : ''} p-4 transition-all duration-200 absolute h-screen w-[90vw] bg-white top-0 left-[100%]`}>
+            <ul className={`${openMobileNav ? ' translate-x-[-100%]' : ''} p-4 transition-all duration-200 absolute h-screen w-[90vw] bg-white top-0 left-[100%] md:hidden`}>
                 <li className={'mb-4'}>
                     <svg className={'ml-auto'} onClick={() => setOpenMobileNav(false)} viewBox="0 0 24 24" width={40} height={40} fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_iconCarrier">
-                            <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                         </g>
                     </svg>
                 </li>

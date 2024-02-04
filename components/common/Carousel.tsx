@@ -70,18 +70,15 @@ const Carousel = ({
                 }
             </div>
             <div className={"glide mt-10 md:hidden how-work"}>
-                <div data-glide-el="track" className="glide__track">
-                    <ul className="glide__slides">
+                <div data-glide-el={"track"} className={"glide__track"}>
+                    <ul className={"glide__slides"}>
                         {
                             items.map((item, index) => {
                                 return (
                                     <li
                                         key={`${item.order}-${index}`}
                                         className={`glide__slide flex flex-col items-center transition-all duration-300 w-full ${index === selectedServiceIndex ? 'selected-icon p-3 border-b-2 border-[#5a0220]' : ''}`}
-                                        onClick={() => {
-                                            console.log(">>click")
-                                            setSelectedServiceIndex(index)
-                                        }}
+                                        onClick={() => setSelectedServiceIndex(index)}
                                     >
                                         <span className={`transition-all duration-300 ${index === selectedServiceIndex ? '' : ''}`}>
                                             {item.icon}
@@ -94,6 +91,14 @@ const Carousel = ({
                             })
                         }
                     </ul>
+                    <div className={"glide__arrows"} data-glide-el="controls">
+                        <button className={"glide__arrow glide__arrow--left"} data-glide-dir="<">
+                            prev
+                        </button>
+                        <button className={"glide__arrow glide__arrow--right"} data-glide-dir=">">
+                            next
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
