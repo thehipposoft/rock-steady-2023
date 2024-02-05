@@ -71,7 +71,7 @@ const VideoBanner = () => {
             <a
                 href={'/#section-services'}
                 onClick={() => setVideoFinished(true)}
-                className={`${showSkip ? 'opacity-100' : 'opacity-0'} group transition-all duration-300 absolute text-xl bottom-11 translate-x-[50%] right-[50%] flex cursor-pointer items-center hover:bg-[#ffffff3d] px-3 rounded-2xl`}>
+                className={`${showSkip ? 'opacity-100' : 'opacity-0'} group transition-all duration-150 absolute text-xl bottom-11 translate-x-[50%] right-[50%] flex cursor-pointer items-center hover:bg-[#ffffff3d] px-3 rounded-2xl`}>
                 <p className={'text-white w-full group-hover:underline text-sm'}>
                     skip video
                 </p>

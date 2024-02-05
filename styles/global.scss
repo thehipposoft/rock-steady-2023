@@ -83,7 +83,7 @@ li {
 
 @layer components {
     .btn-primary {
-      @apply flex py-2 px-4 bg-gradient-to-b from-gradient-from to-gradient-to transition-all rounded-lg shadow-md font-poppins text-white;
+        @apply flex py-2 px-4 bg-gradient-to-b from-gradient-from to-gradient-to transition-all rounded-lg shadow-md font-poppins text-white text-xl;
     }
     .section-title {
         @apply text-4xl md:text-7xl font-bold text-text-primary font-archivo-black;
@@ -108,6 +108,10 @@ li {
     input, textarea {
         @apply rounded-2xl border-2 border-text-primary w-full;
         padding: 1rem !important;
+    }
+
+    a {
+        @apply transition-all duration-150 hover:underline;
     }
 
     /*Dialog*/

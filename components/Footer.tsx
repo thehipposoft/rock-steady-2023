@@ -8,11 +8,11 @@ const Footer = () => {
                 fill
                 alt={'Footer pattern'}
                 src={'/assets/footer-background.png'}
-                className={'!h-[120%]'}
+                className={'!h-[120%] absolute'}
             />
-            <div className={'max-w-[1300px] px-4 md:px-0 py-6 md:py-10 mx-auto'}>
-                <div className={'grid md:grid-cols-4 gap-6 max-w-[1300px]'}>
-                    <div>
+            <div className={'max-w-[1300px] px-4 md:px-0 py-6 md:py-10 mx-auto relative'}>
+                <div className={'grid md:grid-cols-12 gap-10 max-w-[1300px]'}>
+                    <div className={'col-span-4'}>
                         <Image
                             alt={'RockSteady Logo'}
                             src={'/assets/logo.png'}
@@ -20,46 +20,37 @@ const Footer = () => {
                             height={64}
                             className={'mb-3'}
                         />
-                        <p>
+                        <p className={'text-sm'}>
                             Leaders in digital transformation from strategy to implementation through transformation of people, process and technology.
                         </p>
                     </div>
-                    <div>
-                        <h4 className={'text-text-primary mb-4'}>
-                            About
-                        </h4>
-                        <ul>
-                            <li className={'text-text-primary mb-3'}>
-                                Social media
-                            </li>
-                            <li className={'text-text-primary mb-3'}>
-                                SEO/SEM
-                            </li>
-                            <li className={'text-text-primary mb-3'}>
-                                UX UI
-                            </li>
-                            <li className={'text-text-primary mb-3'}>
-                                Block Chain Technology
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className={'text-text-primary mb-4'}>
-                            How
-                        </h4>
-                        <ul className={'text-text-primary'}>
-                            <li className={'text-text-primary mb-3'}>Discover</li>
-                            <li className={'text-text-primary mb-3'}>Design</li>
-                            <li className={'text-text-primary mb-3'}>Develop</li>
-                            <li className={'text-text-primary mb-3'}>Deploy</li>
-                            <li className={'text-text-primary mb-3'}>Manteinance</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className={'text-text-primary mb-4'}>
+                    <ul className={'flex justify-evenly col-span-5'}>
+                        <li className={'text-text-primary mb-3'}>
+                            <a href={'#section-services'}>
+                                Services
+                            </a>
+                        </li>
+                        <li className={'text-text-primary mb-3'}>
+                            <a href={'#section-how-works'}>
+                                How
+                            </a>
+                        </li>
+                        <li className={'text-text-primary mb-3'}>
+                            <a href={'#section-values'}>
+                                Values
+                            </a>
+                        </li>
+                        <li className={'text-text-primary mb-3'}>
+                            <a href={'#section-mission'}>
+                                About
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div className={'col-span-2'}>
+                        <h4 className={'text-text-primary mb-4 font-poppins-bold'}>
                             Contact
                         </h4>
-                        <a>rocksteadydigital@gmail.com</a>
                         <div className={'flex items-center gap-10 mt-5'}>
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_1601_453)">

@@ -5,7 +5,7 @@ import { required, email } from '@/utils/fieldValidations';
 
 const ContactForm = () => {
     return (
-        <section className={'md:w-[700px] px-6 md:px-0 min-h-screen flex flex-col justify-center'}>
+        <section id={'contact'} className={'md:w-[700px] px-6 md:px-0 min-h-screen flex flex-col justify-center'}>
             <div className={'col-span-12'}>
                 <div className={'flex justify-between items-center mb-6'}>
                     <svg width="40" height="20" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
