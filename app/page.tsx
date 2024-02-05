@@ -1,4 +1,5 @@
 //Components
+import ContactForm from "@/components/ContactForm";
 import CTABanner from "@/components/CTA-banner";
 import Footer from "@/components/Footer";
 import HowWorks from "@/components/HowWorks";
@@ -16,6 +17,7 @@ export default function Home() {
       <Values />
       <Mission />
       <CTABanner />
+      <ContactForm />
       <Footer />
     </main>
   )
