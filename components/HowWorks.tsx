@@ -89,10 +89,11 @@ const HOW_WORKS: constantsType[] = [
 
 const HowWorks = () => {
     const [selectedServiceIndex, setSelectedServiceIndex] = useState<number>(2);
+    const [mobileSelectedServiceIndex, setMobileSelectedIndex] = useState<number>(2);
 
     return (
         <section id={"section-how-works"} className={'h-screen grid grid-cols-1 md:grid-cols-2 w-full'}>
-            <div className={'relative'}>
+            <div className={'relative hidden md:block'}>
                 {
                     HOW_WORKS.map((element, index) =>
                         <Image

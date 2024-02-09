@@ -8,6 +8,8 @@ import Services from "@/components/Services";
 import Values from "@/components/Values";
 import VideoBanner from "@/components/VideoBanner";
 
+import 'react-glidejs/dist/index.css';
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between main-container">

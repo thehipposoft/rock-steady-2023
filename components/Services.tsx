@@ -4,8 +4,6 @@ import Image from "next/image";
 import Modal from "./common/Modal";
 import Glide from 'react-glidejs';
 
-import 'react-glidejs/dist/index.css';
-
 type Service = {
     title: string,
     description: string,
@@ -37,7 +35,7 @@ const Services = () => {
                     <h2 className={'lg:text-6xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         SM Marketing & Analytics
                     </h2>
-                    <h5 className={'font-poppins-bold mb-6 text-xl'}>
+                    <h5 className={'font-poppins-bold mb-6 text-2xl'}>
                         Raise Your Profile & Measure Success
                     </h5>
                     <p className={'text-sm mb-3'}>
@@ -67,7 +65,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     />
                 </div>
                 <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
-                    <h2 className={'lg:text-6xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
+                    <h2 className={'lg:text-6xl md:text-3xl text-2xl text-primary font-archivo-black mb-6'}>
                         People, Culture and Change
                     </h2>
                     <h5 className={'mb-6 text-xl font-poppins-bold'}>
@@ -99,7 +97,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     />
                 </div>
                 <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
-                    <h2 className={'lg:text-5xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
+                    <h2 className={'lg:text-5xl md:text-3xl text-2xl text-primary font-archivo-black mb-6'}>
                         Digital Brand Competitor Analysis
                     </h2>
                     <h5 className={'mb-6 text-xl font-poppins-bold'}>
@@ -132,7 +130,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     />
                 </div>
                 <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
-                    <h2 className={'lg:text-5xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
+                    <h2 className={'lg:text-5xl md:text-3xl text-2xl text-primary font-archivo-black mb-6'}>
                         Digital Transformation & Program Management
                     </h2>
                     <h5 className={'mb-6 text-xl font-poppins-bold'}>
@@ -165,7 +163,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     />
                 </div>
                 <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
-                    <h2 className={'lg:text-7xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
+                    <h2 className={'lg:text-7xl md:text-3xl text-2xl text-primary font-archivo-black mb-6'}>
                         Blockchain
                     </h2>
                     <h5 className={'mb-6 text-xl font-poppins-bold'}>
@@ -183,7 +181,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
     ];
 
     return (
-        <section id={"section-services"} className={'md:h-screen w-full bg-texture bg-cover bg-no-repeat grid grid-cols-1 md:grid-cols-2 py-8 md:py-0'}>
+        <section id={"section-services"} className={'h-screen w-full bg-texture bg-cover bg-no-repeat grid grid-cols-1 md:grid-cols-2 py-8 md:py-0'}>
             <div className={'grid grid-cols-12 m-auto px-4 md:px-20'}>
                 <div className={'col-span-12'}>
                     <div className={'flex justify-between items-center mb-6'}>
@@ -203,8 +201,8 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                         </svg>
                     </div>
                 </div>
-                <div className={'col-span-1'} />
-                <div className={'col-span-11'}>
+                <div className={'col-span-1 hidden md:block'} />
+                <div className={'col-span-12 md:col-span-11'}>
                     <p className={'font-poppins-bold text-xl md:text-2xl mb-6'}>
                         Innovative Digital Solutions to Rock your World!
                     </p>
@@ -243,7 +241,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     })
                 }
             </div>
-            <div className={'glide-carousel md:hidden my-6'}>
+            <div className={'md:hidden my-6'}>
                 <Glide
                     ref={gliderRef}
                     throttle={0}
@@ -267,8 +265,8 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                                         fill
                                         className={'rounded-md object-cover transition-all group-hover:brightness-50'}
                                     />
-                                    <h3 className={'absolute bottom-3 left-3 flex'}>
-                                        {s.title} <span className={'group-hover:opacity-100 ml-2 opacity-0 transition-all'}>... Read more</span>
+                                    <h3 className={'absolute bottom-3 left-3 flex flex-col'}>
+                                        {s.title} <span className={'ml-2 md:hidden text-xs'}>...Tap for more</span>
                                     </h3>
                                 </div>
                             )

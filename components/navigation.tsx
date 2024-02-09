@@ -38,8 +38,8 @@ const Navigation = () => {
                     <a href={'#section-mission'}>About</a>
                 </li>
             </ul>
-            <a href={'/#contact'}>
-                <button className={'btn-primary hidden md:flex'}>
+            <a href={'/#contact'} className={'hover:bottom-0 hover:no-underline'}>
+                <button className={'btn-primary hidden md:flex ='}>
                     Contact us
                 </button>
             </a>
@@ -62,7 +62,7 @@ const Navigation = () => {
                     <Image
                         alt={'RockSteady Logo'}
                         src={'/assets/logo.png'}
-                        width={118}
+                        width={150}
                         height={64}
                         className={'m-auto mb-10'}
                     />
@@ -79,7 +79,7 @@ const Navigation = () => {
                 <li className={'my-5'}>
                     <a className={'text-text-primary text-2xl'} href={'#section-mission'}>About</a>
                 </li>
-                <button className={'btn-primary flex m-auto w-full mt-6'}>
+                <button className={'btn-primary flex m-auto w-full mt-16'}>
                     Contact us
                 </button>
             </ul>

@@ -15,7 +15,7 @@ const ContactForm = () => {
                         <h3 className={'subsection-title-empty text-center md:text-6xl'}>
                             READY TO
                         </h3>
-                        <h3 className={'subsection-title text-center md:text-8xl'}>
+                        <h3 className={'subsection-title text-center md:text-8xl text-5xl'}>
                             ROCK?
                         </h3>
                     </span>

@@ -81,6 +81,15 @@ li {
     }
 }
 
+body, html {
+    scroll-snap-type: y mandatory;
+}
+
+.main-container section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
 @layer components {
     .btn-primary {
         @apply flex py-2 px-4 bg-gradient-to-b from-gradient-from to-gradient-to transition-all rounded-lg shadow-md font-poppins text-white text-xl;
@@ -111,7 +120,7 @@ li {
     }
 
     a {
-        @apply transition-all duration-150 hover:underline;
+        @apply transition-all duration-150 bottom-0 hover:underline relative hover:bottom-[2px];
     }
 
     /*Dialog*/

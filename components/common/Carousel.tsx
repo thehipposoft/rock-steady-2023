@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
-import Glide from '@glidejs/glide';
+import React, { useRef } from "react";
+import Image from "next/image";
+import GlideReact from 'react-glidejs';
 
 type ItemsType = {
     title: string,
@@ -20,17 +21,11 @@ const Carousel = ({
     selectedServiceIndex,
     setSelectedServiceIndex,
 }:CarousePropsTypes) => {
-    useEffect(() => {
-        new Glide('.glide', {
-            type: 'carousel',
-            perView: 3,
-            gap: 10,
-        }).mount();
-    },[]);
+    const gliderRef = useRef<any>(null);
 
     return (
-        <div className={'flex flex-col md:justify-center items-center p-4 md:p-10 h-full md:h-auto mt-4 md:mt-0'}>
-            <div className={'min-h-[8rem] md:min-h-[13rem]'}>
+        <div className={'md:flex flex-col md:justify-center items-center p-4 md:p-10 h-full md:h-auto mt-4 md:mt-0'}>
+            <div className={'hidden md:block min-h-[8rem] md:min-h-[13rem]'}>
                 {
                     items.map((item, index) => {
                         return (
@@ -46,7 +41,7 @@ const Carousel = ({
                     })
                 }
             </div>
-            <svg className={'max-w-full'} width="426" height="12" viewBox="0 0 426 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg className={'max-w-full hidden md:block'} width="426" height="12" viewBox="0 0 426 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 0.452637H205.545L211.464 8.97567C212.229 10.077 213.84 10.1285 214.674 9.0782L221.52 0.452637H426" stroke="#080D26" strokeWidth="0.5"/>
             </svg>
             <div className={'w-full justify-between mt-10 min-h-[7rem] hidden md:flex'}>
@@ -69,37 +64,51 @@ const Carousel = ({
                     })
                 }
             </div>
-            <div className={"glide mt-10 md:hidden how-work"}>
-                <div data-glide-el={"track"} className={"glide__track"}>
-                    <ul className={"glide__slides"}>
-                        {
-                            items.map((item, index) => {
-                                return (
-                                    <li
-                                        key={`${item.order}-${index}`}
-                                        className={`glide__slide flex flex-col items-center transition-all duration-300 w-full ${index === selectedServiceIndex ? 'selected-icon p-3 border-b-2 border-[#5a0220]' : ''}`}
-                                        onClick={() => setSelectedServiceIndex(index)}
-                                    >
-                                        <span className={`transition-all duration-300 ${index === selectedServiceIndex ? '' : ''}`}>
-                                            {item.icon}
-                                        </span>
-                                        <h3 className={`text-primary text-center ${index === selectedServiceIndex ? '' : ''}`}>
+            <div className={'md:hidden'}>
+                <GlideReact
+                    ref={gliderRef}
+                    throttle={0}
+                    type={"carousel"}
+                    perView={1}
+                    focusAt={'center'}
+                >
+                    {
+                        items.map((item, index) => {
+                            return (
+                                <div
+                                    key={`${item.order}-${index}`}
+                                    className={`glide__slide flex flex-col items-center transition-all duration-300 w-full`}
+                                >
+                                    <div className={'relative md:hidden h-[10rem] mb-12 w-full'}>
+                                        <Image
+                                            alt={`How it works - ${item.title}`}
+                                            src={item.image}
+                                            fill
+                                            className={`object-cover w-full transition-all duration-300`}
+                                        />
+                                    </div>
+                                    <div>
+                                        <h3 className={`text-primary font-poppins-bold text-3xl text-center mb-4 transition-all duration-200 top-0`}>
                                             {item.title}
                                         </h3>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                    <div className={"glide__arrows"} data-glide-el="controls">
-                        <button className={"glide__arrow glide__arrow--left"} data-glide-dir="<">
-                            prev
-                        </button>
-                        <button className={"glide__arrow glide__arrow--right"} data-glide-dir=">">
-                            next
-                        </button>
-                    </div>
-                </div>
+                                        <div className={`text-center mb-10 transition-all duration-200 bottom-0`}>
+                                            {item.text}
+                                        </div>
+                                    </div>
+                                    <svg className={'max-w-full mb-10'} width="426" height="12" viewBox="0 0 426 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 0.452637H205.545L211.464 8.97567C212.229 10.077 213.84 10.1285 214.674 9.0782L221.52 0.452637H426" stroke="#080D26" strokeWidth="0.5"/>
+                                    </svg>
+                                    <span className={`transition-all duration-300`}>
+                                        {item.icon}
+                                    </span>
+                                    <h3 className={`text-primary text-center`}>
+                                        {item.title}
+                                    </h3>
+                                </div>
+                            )
+                        })
+                    }
+                </GlideReact>
             </div>
         </div>
     )
