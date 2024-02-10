@@ -8,7 +8,7 @@ const Footer = () => {
                 fill
                 alt={'Footer pattern'}
                 src={'/assets/footer-background.png'}
-                className={'!h-[120%] absolute'}
+                className={'!h-[130%] md:!h-[120%] absolute'}
             />
             <div className={'max-w-[1300px] px-4 md:px-0 py-6 md:py-10 mx-auto relative'}>
                 <div className={'grid md:grid-cols-12 gap-10 max-w-[1300px]'}>
