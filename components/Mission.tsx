@@ -36,7 +36,7 @@ const Mission = () => {
                             <p className={'mb-3 text-sm md:text-lg'}>
                                 I can help you reach your digital goals so you can focus on the more important things in life.
                             </p>
-                            <Link href={'/about'}>
+                            <Link href={'/about'} className={'hover:bottom-0 hover:no-underline'}>
                                 <button
                                     className={'btn-primary w-full justify-center'}
                                 >

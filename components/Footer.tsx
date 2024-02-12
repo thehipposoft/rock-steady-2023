@@ -72,7 +72,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <p className={'text-center mt-10 mb-5'}>
-                    Created by <a>hipposoft</a> | All Rights Reserved
+                    Created by Rock Steady Digital & <a href={'https://www.thehipposoft.com/'} target={'_blank'}>hipposoft</a> | All Rights Reserved
                 </p>
             </div>
 
