@@ -1,11 +1,56 @@
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Mission = () => {
+    useEffect(() => {
+        const canvas:any = Array.from(document.querySelectorAll('#canvas-mission'));
+
+        canvas.forEach((c:any) => {
+            if (c) {
+                const colour = c.getAttribute('data-colour') || '#00a098';
+                const $ = c.getContext('2d');
+                const w = c.width = window.innerWidth;
+                const h = c.height = c.nextElementSibling.offsetHeight || window.innerHeight;
+                const intLines = 10;
+                const draw = function (t:any) {
+                    $.clearRect(0, 0, c.width, c.height);
+                    $.lineWidth = 1;
+                    $.globalAlpha = .5;
+                    $.fillStyle = 'transparent';
+                    $.fillRect(0, 0, w, h);
+                    for (let i = 0; i < intLines; i++) {
+                        $.strokeStyle = colour;
+                        $.beginPath();
+                        $.moveTo(-0, h / 2 + i);
+                        for (let j = 0; j < w; j += 2) {
+                            $.lineTo(
+                                Math.cos(1 / 10) + j + 0.004 * j * j,
+                                Math.floor(h / 2 + j / 2 *
+                                    Math.sin(j / 50 - t / 50 - 1 / 118) +
+                                    (i * 15) * Math.sin(j / 25 - (i + t) / 5))
+                            );
+                        }
+                        ;
+                        $.stroke();
+                    }
+                }
+                let t = 0;
+                const run = function () {
+                    window.requestAnimationFrame(run);
+                    t += 0.025;
+                    draw(t);
+                };
+                run();
+            }
+        })
+    },[]);
+
     return (
-        <section id={"section-mission"} className={'p-4 md:p-12 md:h-screen'}>
-            <div className={'max-w-[1300px] mx-auto'}>
+        <section id={"section-mission"} className={'md:h-screen relative overflow-hidden w-full'}>
+            <canvas className="absolute -z-50 w-full" id="canvas-mission" data-colour="#5a02205e"></canvas>
+            <div className={'max-w-[1300px] mx-auto p-4 md:p-12'}>
                 <h2 className={'text-text-primary text-2xl md:text-6xl text-center 2xl:mb-28 mb-6 md:mb-10 section-title mt-6 md:mt-0'}>
                     DIFFERENT <span className={'section-title-empty text-2xl md:text-6xl'}>FROM THE REST</span>
                 </h2>
@@ -29,7 +74,7 @@ const Mission = () => {
                             height={300}
                             className={'rounded-md'}
                         />
-                        <div className={'2xl:p-10 p-4'}>
+                        <div className={'2xl:p-10 p-4 bg-[#ffffff9c] rounded-b-md'}>
                             <h5 className={'mb-3 text-lg md:text-xl font-poppins-bold'}>
                                 KAMLESH LAD - FOUNDER
                             </h5>

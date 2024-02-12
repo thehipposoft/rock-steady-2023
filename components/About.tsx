@@ -1,12 +1,54 @@
 
 "use client"
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ABOUT_TEXT, COMPANIES } from '../constants/about';
 import Image from 'next/image';
 
 const About = () => {
+    useEffect(() => {
+        const c:any = document.getElementById('canvas-about');
+
+        if (c) {
+            const colour = c.getAttribute('data-colour') || '#ff0000'; // changed color to red
+            const $ = c.getContext('2d');
+            const w = c.width = window.innerWidth;
+            const h = c.height = c.nextElementSibling.offsetHeight || window.innerHeight;
+            const intLines = 45; // increased the number of lines
+            const draw = function (t:any) {
+                $.clearRect(0, 0, c.width, c.height);
+                $.lineWidth = 1;
+                $.globalAlpha = .3;
+                $.fillStyle = 'transparent';
+                $.fillRect(0, 0, w, h);
+                for (let i = 0; i < intLines; i++) {
+                    $.strokeStyle = colour;
+                    $.beginPath();
+                    $.moveTo(-0, h / 2 + i);
+                    for (let j = 0; j < w; j += 2) {
+                        $.lineTo(
+                            Math.cos(1 / 10) + j + 0.002 * j * j,
+                            Math.floor(h / 2 + j / 2 *
+                                Math.sin(j / 50 - t / 50 - 1 / 118) +
+                                (i * 10) * Math.sin(j / 25 - (i + t) / 5))
+                        );
+                    }
+                    ;
+                    $.stroke();
+                }
+            }
+            let t = 0;
+            const run = function () {
+                window.requestAnimationFrame(run);
+                t += 0.025;
+                draw(t);
+            };
+            run();
+        }
+    },[])
+
     return(
-        <div className={'flex sm:flex-row flex-col bg-white md:h-screen relative'}>
+        <div className={'flex sm:flex-row flex-col bg-white md:h-screen relative overflow-hidden'}>
+            <canvas className="absolute z-0 w-full h-[80%] rotate-[130deg] right-[35%] object-contain" id="canvas-about" data-colour="#b01e22"></canvas>
             <svg className={'absolute top-0 right-0 hidden md:block'} width="612" height="461" viewBox="0 0 612 461" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M137.78 -85.4503C76.9675 -128.163 85.6592 -220.804 153.355 -251.46L1090.35 -675.778C1254.1 -749.932 1437.33 -621.1 1422.95 -441.918L1390.52 -37.7909L815.217 222.736C725.293 263.458 620.544 253.63 539.764 196.893L137.78 -85.4503Z" fill="url(#paint0_linear_1710_360)"/>
                 <mask id="mask0_1710_360" maskUnits="userSpaceOnUse" x="0" y="-681" width="1391" height="963">
@@ -84,9 +126,13 @@ const About = () => {
                 <div className={'sm:w-1/2 flex flex-col justify-center items-center sm:items-start md:relative h-fit m-auto'}>
                     <a
                         href={'/#ABOUT'}
-                        className={'absolute flex justify-center duration-300 hover:scale-105 hover:underline md:right-[14rem] top-6 md:top-2 right-6'}
+                        className={'absolute flex justify-center duration-300 hover:scale-105 hover:underline md:right-[14rem] top-6 md:top-2 right-6 h-fit'}
                     >
-                        &#8617; HOME PAGE
+                        <svg fill="#000000" className={'mr-2'} width={25} height={20} version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 869.959 869.958">
+                            <path d="M146.838,484.584c10.271,10.395,23.804,15.6,37.347,15.6c13.329,0,26.667-5.046,36.897-15.155 c20.625-20.379,20.825-53.62,0.445-74.245l-41.688-42.191h423.78c88.963,0,161.34,72.376,161.34,161.339v4.32 c0,43.096-16.782,83.61-47.255,114.084c-20.503,20.502-20.503,53.744,0,74.246c10.251,10.251,23.688,15.377,37.123,15.377 c13.435,0,26.872-5.125,37.123-15.377c50.305-50.306,78.009-117.188,78.009-188.331v-4.32c0-71.142-27.704-138.026-78.009-188.331 c-50.306-50.305-117.189-78.009-188.331-78.009h-424.99l42.25-41.747c20.625-20.379,20.825-53.62,0.445-74.245 c-20.376-20.624-53.618-20.825-74.244-0.445L15.601,277.068c-9.905,9.787-15.517,23.107-15.6,37.03 c-0.084,13.924,5.367,27.31,15.154,37.215L146.838,484.584z">
+                            </path>
+                        </svg>
+                        HOME PAGE
                     </a>
                     <h2 className={'text-4xl font-archivo-black text-text-primary mt-10 md:mt-0'}>
                         ABOUT ME

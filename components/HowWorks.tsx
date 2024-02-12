@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Carousel from "./common/Carousel";
 
@@ -90,9 +90,51 @@ const HOW_WORKS: constantsType[] = [
 const HowWorks = () => {
     const [selectedServiceIndex, setSelectedServiceIndex] = useState<number>(2);
 
+    useEffect(() => {
+        const c:any = document.getElementById('canvas-how-works');
+
+        if (c) {
+            const colour = c.getAttribute('data-colour') || '#ff0000'; // changed color to red
+            const $ = c.getContext('2d');
+            const w = c.width = window.innerWidth;
+            const h = c.height = c.nextElementSibling.offsetHeight || window.innerHeight;
+            const intLines = 30; // increased the number of lines
+            const draw = function (t:any) {
+                $.clearRect(0, 0, c.width, c.height);
+                $.lineWidth = 1;
+                $.globalAlpha = .5;
+                $.fillStyle = 'transparent';
+                $.fillRect(0, 0, w, h);
+                for (let i = 0; i < intLines; i++) {
+                    $.strokeStyle = colour;
+                    $.beginPath();
+                    $.moveTo(-0, h / 2 + i);
+                    for (let j = 0; j < w; j += 2) {
+                        $.lineTo(
+                            Math.cos(1 / 10) + j + 0.004 * j * j,
+                            Math.floor(h / 2 + j / 2 *
+                                Math.sin(j / 50 - t / 50 - 1 / 118) +
+                                (i * 10) * Math.sin(j / 25 - (i + t) / 5))
+                        );
+                    }
+                    ;
+                    $.stroke();
+                }
+            }
+            let t = 0;
+            const run = function () {
+                window.requestAnimationFrame(run);
+                t += 0.025;
+                draw(t);
+            };
+            run();
+        }
+    },[])
+
     return (
         <section id={"section-how-works"} className={'h-screen grid grid-cols-1 md:grid-cols-2 w-full'}>
             <div className={'relative hidden md:block'}>
+                <canvas className="absolute z-10 w-full h-3/4" id="canvas-how-works" data-colour="#b01e22"></canvas>
                 {
                     HOW_WORKS.map((element, index) =>
                         <Image
