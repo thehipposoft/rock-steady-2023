@@ -26,7 +26,7 @@ const Carousel = ({
     const router = useRouter();
 
     return (
-        <div className={'md:flex flex-col md:justify-center items-center p-4 md:p-10 h-full md:h-auto mt-4 md:mt-0 bg-white'}>
+        <div className={'md:flex flex-col md:justify-center items-center p-0 md:p-10 h-full md:h-auto bg-white'}>
             <div className={'hidden md:block min-h-[8rem] md:min-h-[13rem]'}>
                 {
                     items.map((item, index) => {
@@ -97,7 +97,7 @@ const Carousel = ({
                                             {item.text}
                                         </div>
                                     </div>
-                                    <svg className={'max-w-full mb-10'} width="426" height="12" viewBox="0 0 426 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg className={'max-w-full mb-4'} width="426" height="12" viewBox="0 0 426 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0 0.452637H205.545L211.464 8.97567C212.229 10.077 213.84 10.1285 214.674 9.0782L221.52 0.452637H426" stroke="#080D26" strokeWidth="0.5"/>
                                     </svg>
                                     <span className={`transition-all duration-300`}>
@@ -113,7 +113,7 @@ const Carousel = ({
                 </GlideReact>
             </div>
             <button
-                className={'btn-primary mt-20 mx-auto hidden md:flex'}
+                className={'btn-primary md:mt-20 mx-auto'}
                 onClick={() => {
                     window.localStorage.setItem('section', 'How it works');
                     router.push('/#contact');

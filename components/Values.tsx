@@ -62,7 +62,7 @@ const Values = () => {
                                         <div className={'bg-[#b40fe71a] rounded-full p-3 icon-border h-32 w-32 mb-4'}>
                                             {v.icon}
                                         </div>
-                                        <h4 className={'text-3xl text-text-primary font-poppins-extrabold mb-6'}>
+                                        <h4 className={'text-center text-3xl text-text-primary font-poppins-extrabold mb-6'}>
                                             {v.title}
                                         </h4>
                                         <p className={'text-center'}>
