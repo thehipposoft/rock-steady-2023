@@ -1,4 +1,5 @@
-import React, { ReactNode } from "react";
+"use client"
+import React, { ReactNode, useEffect } from "react";
 
 type Props = {
     children: ReactNode,
@@ -11,6 +12,15 @@ const Modal = ({
     open,
     onClose
 }:Props) => {
+    useEffect(() => {
+        if (open) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [open]);
+
+    
     return (
         <dialog open={open} className={'w-full h-full overflow-hidden fixed top-0 z-10'}>
             <span onClick={() => onClose()} className={'cursor-pointer'}>

@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useRouter } from 'next/navigation';
 import Image from "next/image";
 import GlideReact from 'react-glidejs';
 
@@ -22,9 +23,10 @@ const Carousel = ({
     setSelectedServiceIndex,
 }:CarousePropsTypes) => {
     const gliderRef = useRef<any>(null);
+    const router = useRouter();
 
     return (
-        <div className={'md:flex flex-col md:justify-center items-center p-4 md:p-10 h-full md:h-auto mt-4 md:mt-0'}>
+        <div className={'md:flex flex-col md:justify-center items-center p-4 md:p-10 h-full md:h-auto mt-4 md:mt-0 bg-white'}>
             <div className={'hidden md:block min-h-[8rem] md:min-h-[13rem]'}>
                 {
                     items.map((item, index) => {
@@ -110,6 +112,15 @@ const Carousel = ({
                     }
                 </GlideReact>
             </div>
+            <button
+                className={'btn-primary mt-20 mx-auto hidden md:flex'}
+                onClick={() => {
+                    window.localStorage.setItem('section', 'How it works');
+                    router.push('/#contact');
+                }}
+            >
+                Find out more
+            </button>
         </div>
     )
 };

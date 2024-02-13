@@ -39,7 +39,7 @@ const Navigation = () => {
                 </li>
             </ul>
             <a href={'/#contact'} className={'hover:bottom-0 hover:no-underline'}>
-                <button className={'btn-primary hidden md:flex ='}>
+                <button className={'btn-primary hidden md:flex max-h-[49px] text-lg'}>
                     Contact us
                 </button>
             </a>
@@ -79,7 +79,7 @@ const Navigation = () => {
                 <li className={'my-5'}>
                     <a className={'text-text-primary text-2xl'} href={'#section-mission'}>About</a>
                 </li>
-                <button className={'btn-primary flex m-auto w-full mt-16'}>
+                <button className={'btn-primary flex m-auto w-full mt-16 max-h-[49px]'}>
                     Contact us
                 </button>
             </ul>

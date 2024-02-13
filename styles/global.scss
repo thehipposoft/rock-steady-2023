@@ -70,6 +70,14 @@ li {
     font-family: 'Poppins';
 }
 
+.Glide-leftArrow {
+    left: 1rem !important;
+}
+
+.Glide-rightArrow {
+    right: 1rem !important;
+}
+
 @media (min-width: 600px) {
     body, html {
         scroll-snap-type: y mandatory;
@@ -92,7 +100,7 @@ body, html {
 
 @layer components {
     .btn-primary {
-        @apply flex py-2 px-4 bg-gradient-to-b from-gradient-from to-gradient-to transition-all rounded-lg shadow-md font-poppins text-white text-xl;
+        @apply flex py-2 px-4 drop-shadow-2xl bg-gradient-to-b from-gradient-from to-gradient-to transition-all rounded-lg font-poppins text-white text-base min-h-[58px] min-w-[198px] justify-center items-center;
     }
     .section-title {
         @apply text-4xl md:text-7xl font-bold text-text-primary font-archivo-black;

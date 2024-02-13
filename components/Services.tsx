@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useRef } from "react";
+import { useRouter } from 'next/navigation';
 import Image from "next/image";
 import Modal from "./common/Modal";
 import Glide from 'react-glidejs';
@@ -13,9 +14,16 @@ type Service = {
 
 const Services = () => {
     const gliderRef = useRef(null);
+    const router = useRouter();
 
     const [openModal, setOpenModal] = useState<boolean>(false);
     const [modalIndex, setModalIndex] = useState<number>(0);
+
+    const handleFindOutMore = (section: string) => {
+        window.localStorage.setItem('section', section);
+        setOpenModal(false);
+        router.push('/#contact');
+    }
 
     const SERVICES: Service[] = [
         {
@@ -45,7 +53,10 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     <p className={'text-sm'}>
                         We generate valueable content based on a solid market strategy to provide you with the framework and tools that will fuel your growth for 5 yo 10 years.
                     </p>
-                    <button className={'btn-primary mt-20 ml-auto'}>
+                    <button
+                        className={'btn-primary mt-20 ml-auto'}
+                        onClick={() => handleFindOutMore('SM Marketing & Analytics')}
+                    >
                         Find out more
                     </button>
                 </div>
@@ -77,7 +88,10 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     <p className={'text-sm'}>
                         Rock Steady Digital can help you through this process and build strategies and action plans to deliver change more smoothly.
                     </p>
-                    <button className={'btn-primary mt-20 ml-auto'}>
+                    <button
+                        className={'btn-primary mt-20 ml-auto'}
+                        onClick={() => handleFindOutMore('People, Culture and Change')}
+                    >
                         Find out more
                     </button>
                 </div>
@@ -110,7 +124,10 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     <p className={'text-sm'}>
                         We have the ability to adapt and flexibility to deal with exponential changes in technology.
                     </p>
-                    <button className={'btn-primary mt-20 ml-auto'}>
+                    <button
+                        className={'btn-primary mt-20 ml-auto'}
+                        onClick={() => handleFindOutMore('Digital Brand Competitor Analysis')}
+                    >
                         Find out more
                     </button>
                 </div>
@@ -143,14 +160,17 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     <p className={'text-sm'}>
                         We have the ability to adapt and flexibility to deal with exponential changes in technology.
                     </p>
-                    <button className={'btn-primary mt-20 ml-auto'}>
+                    <button
+                        className={'btn-primary mt-20 ml-auto'}
+                        onClick={() => handleFindOutMore('Digital Transformation & Program Management')}
+                    >
                         Find out more
                     </button>
                 </div>
             </div>,
         },
         {
-            title: 'Blockchain (Minting, Staking & Mining)',
+            title: 'Blockchain',
             description: 'We help you to grow your business with our SM Marketing & Analytics services.',
             bgImage: '/assets/services/blockchain.png',
             modalContent: <div className={'grid grid-cols-12 h-full'}>
@@ -172,7 +192,10 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     <p className={'text-sm mb-3'}>
                         With the Blockchain digital technology becoming more and more evident in today’s society, we can help you understand, learn and grow in this new world by using Blockchain Minting, Staking and Mining solutions.
                     </p>
-                    <button className={'btn-primary mt-20 ml-auto'}>
+                    <button
+                        className={'btn-primary mt-20 ml-auto'}
+                        onClick={() => handleFindOutMore('Blockchain')}
+                    >
                         Find out more
                     </button>
                 </div>
@@ -181,7 +204,13 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
     ];
 
     return (
-        <section id={"section-services"} className={'h-screen w-full bg-texture bg-cover bg-no-repeat grid grid-cols-1 md:grid-cols-2 py-8 md:py-0'}>
+        <section id={"section-services"} className={'h-screen w-full grid grid-cols-1 md:grid-cols-2 py-4 md:py-0 relative'}>
+            <Image
+                src={'/assets/texture-2.png'}
+                fill
+                alt={'Services'}
+                className={'object-cover h-full w-full opacity-10'}
+            />
             <div className={'grid grid-cols-12 m-auto px-4 md:px-20'}>
                 <div className={'col-span-12'}>
                     <div className={'flex justify-between items-center mb-6'}>
@@ -206,10 +235,10 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                     <p className={'font-poppins-bold text-xl md:text-2xl mb-6'}>
                         Innovative Digital Solutions to Rock your World!
                     </p>
-                    <p className={'mb-6'}>
+                    <p className={'mb-6 text-sm md:text-base'}>
                         We help organisations with their digital transformation and implement their requirements. We can enhance your company's existing digital capabilities through website and social media development, e-commerce implementations, and digital transformations.
                     </p>
-                    <p className={'font-semibold'}>
+                    <p className={'font-semibold text-sm md:text-base'}>
                         We unite people, processes, tools and data in a creative way that will help your business grow.
                     </p>
                 </div>
