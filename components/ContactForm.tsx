@@ -12,10 +12,10 @@ const ContactForm = () => {
                         <path d="M14.3714 1L13.1333 9.16129L1 11.8817V13.3656L13.1333 16.3333L14.3714 24L16.1048 16.3333L27 13.3656V11.8817L16.1048 9.16129L14.3714 1Z" fill="#080D26" stroke="black"/>
                     </svg>
                     <span className={'mx-10'}>
-                        <h3 className={'subsection-title-empty text-center md:text-6xl'}>
+                        <h3 className={'subsection-title-empty text-center md:text-6xl text-3xl'}>
                             READY TO
                         </h3>
-                        <h3 className={'subsection-title text-center md:text-8xl text-5xl'}>
+                        <h3 className={'subsection-title text-center md:text-8xl text-4xl'}>
                             ROCK?
                         </h3>
                     </span>
