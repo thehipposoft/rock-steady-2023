@@ -3,7 +3,7 @@ import React from "react";
 const CTABanner = () => {
     return (
         <section className={'w-full px-6 hidden md:flex items-center'}>
-            <div className={'m-auto h-fit px-4 md:px-10 py-6 md:py-14 my-2 flex flex-wrap bg-gradient-to-b from-gradient-from to-gradient-to w-full max-w-[1300px] rounded-md justify-between items-center'}>
+            <div className={'m-auto h-fit px-4 md:px-20 py-6 md:py-14 my-2 flex flex-wrap bg-gradient-to-b from-gradient-from to-gradient-to w-full max-w-[1300px] rounded-md items-center'}>
                 <div>
                     <h3 className={'section-title text-white text-2xl md:text-5xl mb-2 '}>
                         READY TO TALK ABOUT
@@ -12,8 +12,8 @@ const CTABanner = () => {
                         YOUR NEXT PROJECT?
                     </h3>
                 </div>
-                <a href={'/#contact'} className={'hover:bottom-0 hover:no-underline'}>
-                    <button className={'btn-primary h-fit md:mt-0 mt-6'}>
+                <a href={'/#contact'} className={'hover:bottom-0 hover:no-underline md:ml-[12rem]'}>
+                    <button className={'btn-secondary h-fit md:mt-0 mt-6'}>
                         Reach us
                     </button>
                 </a>

@@ -100,7 +100,10 @@ body, html {
 
 @layer components {
     .btn-primary {
-        @apply flex py-2 px-4 drop-shadow-2xl bg-gradient-to-b from-gradient-from to-gradient-to transition-all rounded-lg font-poppins text-white text-base min-h-[58px] min-w-[198px] justify-center items-center;
+        @apply flex py-2 px-4 drop-shadow-2xl bg-gradient-to-b from-gradient-from to-gradient-to transition-all rounded-lg font-poppins text-white text-base min-h-[48px] min-w-[198px] justify-center items-center;
+    }
+    .btn-secondary {
+        @apply flex py-2 px-4 drop-shadow-2xl bg-[#FFFFFF80] transition-all rounded-lg font-poppins text-white text-base min-h-[48px] min-w-[198px] justify-center items-center;
     }
     .section-title {
         @apply text-4xl md:text-7xl font-bold text-text-primary font-archivo-black;
