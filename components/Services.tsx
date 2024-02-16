@@ -206,10 +206,10 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
     return (
         <section id={"section-services"} className={'h-screen w-full grid grid-cols-1 md:grid-cols-2 py-4 md:py-0 relative'}>
             <Image
-                src={'/assets/texture-2.png'}
+                src={'/assets/textura1.png'}
                 fill
                 alt={'Services'}
-                className={'object-cover h-full w-full opacity-10'}
+                className={'object-cover h-full w-full'}
             />
             <div className={'grid grid-cols-12 m-auto px-4 md:px-20 relative'}>
                 <div className={'col-span-12'}>
