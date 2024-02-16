@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     siteName: 'Rock Steady',
     images: [
       {
-        url: 'https://www.thehipposoft.com/assets/main-screen.png',
+        url: 'https://www.rocksteadydigital.com.au/assets/main-screen.png',
         width: 800,
         height: 600,
       },
       {
-        url: 'https://www.thehipposoft.com/assets/main-screen.png',
+        url: 'https://www.rocksteadydigital.com.au/assets/main-screen.png',
         width: 1800,
         height: 1600,
         alt: 'Innovative Digital Solutions to Rock your World!',
