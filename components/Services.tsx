@@ -190,7 +190,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                         Seize the opportunity with this emerging technology to help grow your business.
                     </h5>
                     <p className={'text-sm mb-3'}>
-                        With the Blockchain digital technology becoming more and more evident in today’s society, we can help you understand, learn and grow in this new world by using Blockchain Minting, Staking and Mining solutions.
+                        With the Blockchain digital technology becoming more and more evident in today’s society, we can help you understand, learn and grow in this new world by using Blockchain technology.
                     </p>
                     <button
                         className={'btn-primary mt-20 ml-auto'}
