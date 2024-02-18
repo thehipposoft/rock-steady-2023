@@ -70,6 +70,7 @@ const VideoBanner = () => {
                 ref={videoRef}
                 autoPlay
                 muted
+                playsInline
                 className={'object-cover w-full'}
                 onEnded={handleVideoEnd}
             >
