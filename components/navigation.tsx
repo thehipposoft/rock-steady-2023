@@ -68,16 +68,24 @@ const Navigation = () => {
                     />
                 </li>
                 <li className={'my-5'}>
-                    <a className={'text-text-primary text-2xl'} href={'#section-services'}>Services</a>
+                    <a className={'text-text-primary text-2xl'} href={'#section-services'} onClick={() => setOpenMobileNav(false)}>
+                        Services
+                    </a>
                 </li>
                 <li className={'my-5'}>
-                    <a className={'text-text-primary text-2xl'} href={'#section-how-works'}>How</a>
+                    <a className={'text-text-primary text-2xl'} href={'#section-how-works'} onClick={() => setOpenMobileNav(false)}>
+                        How
+                    </a>
                 </li>
                 <li className={'my-5'}>
-                    <a className={'text-text-primary text-2xl'} href={'#section-values'}>Values</a>
+                    <a className={'text-text-primary text-2xl'} href={'#section-values'} onClick={() => setOpenMobileNav(false)}>
+                        Values
+                    </a>
                 </li>
                 <li className={'my-5'}>
-                    <a className={'text-text-primary text-2xl'} href={'#section-mission'}>About</a>
+                    <a className={'text-text-primary text-2xl'} href={'#section-mission'} onClick={() => setOpenMobileNav(false)}>
+                        About
+                    </a>
                 </li>
                 <button className={'btn-primary flex m-auto w-full mt-16 max-h-[49px]'}>
                     Contact us
