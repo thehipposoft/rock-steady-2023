@@ -79,7 +79,7 @@ const Mission = () => {
                                 KAMLESH LAD - FOUNDER
                             </h5>
                             <p className={'mb-3 text-sm md:text-lg'}>
-                                I can help you reach your digital goals so you can focus on the more important things in life.
+                                I can help you reach your digital goals so you can focus on your business.
                             </p>
                             <Link href={'/about'} className={'hover:bottom-0 hover:no-underline'}>
                                 <button
