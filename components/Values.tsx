@@ -1,18 +1,10 @@
 "use client"
-import React, { useEffect, useRef } from "react";
-import Glide from '@glidejs/glide';
+import React, { useRef } from "react";
 import { VALUES } from "@/constants/values";
 import GlideReact from 'react-glidejs';
 
 const Values = () => {
     const gliderRef = useRef(null);
-
-    useEffect(() => {
-        new Glide('.glide-values', {
-            type: 'carousel',
-            perView: 1,
-        }).mount();
-    },[]);
 
     return (
         <section id={"section-values"} className={'min-h-screen w-full bg-texture bg-cover bg-no-repeat p-10 flex flex-col'}>
@@ -28,18 +20,18 @@ const Values = () => {
                     <path d="M14.3714 1L13.1333 9.16129L1 11.8817V13.3656L13.1333 16.3333L14.3714 24L16.1048 16.3333L27 13.3656V11.8817L16.1048 9.16129L14.3714 1Z" fill="#080D26" stroke="black"/>
                 </svg>
             </div>
-            <div className={'hidden md:flex flex-wrap justify-center md:p-2 2xl:p-6 flex-grow'}>
+            <div className={'hidden md:flex flex-wrap justify-center md:p-2 2xl:p-3 flex-grow'}>
                 {
                     VALUES.map((v, index) => {
                         return (
-                            <div key={`value-${index}`} className={'group w-1/3 md:p-6 2xl:p-10 flex flex-col items-center hover:scale-110 transition-all'}>
+                            <div key={`value-${index}`} className={'group w-1/3 md:p-6 flex flex-col items-center hover:scale-110 transition-all'}>
                                 <div className={'bg-[#b40fe71a] rounded-full p-3 icon-border h-24 w-24 mb-4'}>
                                     {v.icon}
                                 </div>
-                                <h4 className={'text-2xl text-text-primary font-poppins-extrabold mb-3'}>
+                                <h4 className={'text-3xl text-text-primary font-poppins-extrabold mb-3 text-center'}>
                                     {v.title}
                                 </h4>
-                                <p className={'text-center text-[13px]'}>
+                                <p className={'text-center text-[14px]'}>
                                     {v.description}
                                 </p>
                             </div>
@@ -73,29 +65,6 @@ const Values = () => {
                             })
                         }
                 </GlideReact>
-            </div>
-            <div className={"glide-values mt-10 md:hidden flex flex-grow hidden"}>
-                <div data-glide-el="track" className="glide__track">
-                    <ul className="glide__slides h-full">
-                        {
-                            VALUES.map((v, index) => {
-                                return (
-                                    <div key={`value-${index}`} className={'flex flex-col items-center transition-all justify-center'}>
-                                        <div className={'bg-[#b40fe71a] rounded-full p-3 icon-border h-24 w-24 mb-4'}>
-                                            {v.icon}
-                                        </div>
-                                        <h4 className={'text-2xl text-text-primary font-poppins-extrabold mb-3'}>
-                                            {v.title}
-                                        </h4>
-                                        <p className={'text-center text-[13px]'}>
-                                            {v.description}
-                                        </p>
-                                    </div>
-                                )
-                            })
-                        }
-                    </ul>
-                </div>
             </div>
         </section>
     )
