@@ -27,21 +27,21 @@ const Services = () => {
 
     const SERVICES: Service[] = [
         {
-            title: 'SM Marketing & Analytics',
-            description: 'We help you to grow your business with our SM Marketing & Analytics services.',
+            title: 'Social Media Marketing & Analytics',
+            description: 'We help you to grow your business with our Social Media Marketing & Analytics services.',
             bgImage: '/assets/services/marketing.png',
             modalContent: <div className={'grid grid-cols-12 h-full'}>
                 <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
                     <Image
                         src={'/assets/services/marketing-modal.png'}
                         fill
-                        alt={'SM Marketing & Analytics'}
+                        alt={'Social Media Marketing & Analytics'}
                         className={'object-cover'}
                     />
                 </div>
                 <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
                     <h2 className={'lg:text-6xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
-                        SM Marketing & Analytics
+                        Social Media Marketing & Analytics
                     </h2>
                     <h5 className={'font-poppins-bold mb-6 text-2xl'}>
                         Raise Your Profile & Measure Success
@@ -51,11 +51,11 @@ const Services = () => {
 We provide SEO/SEM and Analytics to attract target markets and segments.
                     </p>
                     <p className={'text-sm'}>
-                        We generate valueable content based on a solid market strategy to provide you with the framework and tools that will fuel your growth for 5 yo 10 years.
+                        We generate valuable content based on a solid market strategy to provide you with the framework and tools that will fuel your growth.
                     </p>
                     <button
                         className={'btn-primary mt-20 ml-auto'}
-                        onClick={() => handleFindOutMore('SM Marketing & Analytics')}
+                        onClick={() => handleFindOutMore('Social Media Marketing & Analytics')}
                     >
                         Find out more
                     </button>
@@ -64,7 +64,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
         },
         {
             title: 'People, Culture and Change',
-            description: 'We help you to grow your business with our SM Marketing & Analytics services.',
+            description: 'We help you to grow your business with our Social Media Marketing & Analytics services.',
             bgImage: '/assets/services/people.png',
             modalContent: <div className={'grid grid-cols-12 h-full'}>
                 <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
@@ -99,7 +99,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
         },
         {
             title: 'Digital Brand Competitor Analysis',
-            description: 'We help you to grow your business with our SM Marketing & Analytics services.',
+            description: 'We help you to grow your business with our Social Media Marketing & Analytics services.',
             bgImage: '/assets/services/digital-brand.png',
             modalContent:<div className={'grid grid-cols-12 h-full'}>
                 <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
@@ -115,27 +115,29 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                         Digital Brand Competitor Analysis
                     </h2>
                     <h5 className={'mb-6 text-xl font-poppins-bold'}>
-                        Manifest your digital strategy to realise benefits
+                        Use AI and be ahead of your competition
                     </h5>
                     <p className={'text-sm mb-3'}>
-                        We lead digital projects from strategy to implementation through the transformation of people, processes and technology
-    We have the ability to adapt and flexibility to deal with exponential changes in technology.
+                        Business of all type are <span className={'font-semibold underline'}>racing to deploy AI</span> as quick as possible, revolutionising every aspect of their operations and <span className={'font-semibold underline'}>obliterating</span> competitors in the process.
                     </p>
-                    <p className={'text-sm'}>
-                        We have the ability to adapt and flexibility to deal with exponential changes in technology.
+                    <p className={'text-sm mb-3'}>
+                        If you don't act NOW and make AI your primary ally <span className={'font-semibold underline'}>you'll be on a fast track</span> to empty inboxes, silent phones and a barren customer base, wondering how it all slipped away.
                     </p>
-                    <button
-                        className={'btn-primary mt-20 ml-auto'}
-                        onClick={() => handleFindOutMore('Digital Brand Competitor Analysis')}
-                    >
-                        Find out more
-                    </button>
+                    <p className={'text-sm'}>Use this code and get a $100 discount: <span className={'font-bold'}>RSD100</span></p>
+                    <a href={'https://brand-scientist.com/advantage'} target={'_blank'} className={'hover:bottom-0 hover:no-underline  mt-20 ml-auto'}>
+                        <button
+                            className={'btn-primary'}
+                            onClick={() => {}}
+                        >
+                            Find out more
+                        </button>
+                    </a>
                 </div>
             </div>,
         },
         {
             title: 'Digital Transformation & Program Management',
-            description: 'We help you to grow your business with our SM Marketing & Analytics services.',
+            description: 'We help you to grow your business with our Social Media Marketing & Analytics services.',
             bgImage: '/assets/services/digital-transformation.png',
             modalContent: <div className={'grid grid-cols-12 h-full'}>
                 <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
@@ -171,7 +173,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
         },
         {
             title: 'Blockchain',
-            description: 'We help you to grow your business with our SM Marketing & Analytics services.',
+            description: 'We help you to grow your business with our Social Media Marketing & Analytics services.',
             bgImage: '/assets/services/blockchain.png',
             modalContent: <div className={'grid grid-cols-12 h-full'}>
                 <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
