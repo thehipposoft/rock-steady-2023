@@ -64,7 +64,7 @@ const VideoBanner = () => {
     };
 
     return (
-        <section ref={sectionRef} className={'relative h-screen flex overflow-hidden w-full bg-primary'}>
+        <section ref={sectionRef} className={'relative h-[90vh] md:h-screen flex overflow-hidden w-full bg-primary'}>
             <Navigation />
             <video
                 ref={videoRef}
