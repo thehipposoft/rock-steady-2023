@@ -113,7 +113,7 @@ const Carousel = ({
                 </GlideReact>
             </div>
             <button
-                className={'btn-primary mt-4 md:mt-20 mx-auto mb-10 md:mb-0'}
+                className={'btn-primary mt-10 md:mt-20 mx-auto mb-10 md:mb-0'}
                 onClick={() => {
                     window.localStorage.setItem('section', 'How it works');
                     router.push('/#contact');
