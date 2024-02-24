@@ -132,7 +132,7 @@ const HowWorks = () => {
     },[])
 
     return (
-        <section id={"section-how-works"} className={'h-screen grid grid-cols-1 lg:grid-cols-2 w-full'}>
+        <section id={"section-how-works"} className={'md:h-screen grid grid-cols-1 lg:grid-cols-2 w-full'}>
             <div className={'relative hidden md:block'}>
                 <canvas className="absolute z-10 w-full h-3/4" id="canvas-how-works" data-colour="#eb898d"></canvas>
                 {
