@@ -171,6 +171,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                 </div>
             </div>,
         },
+        /*
         {
             title: 'Blockchain',
             description: 'We help you to grow your business with our Social Media Marketing & Analytics services.',
@@ -203,6 +204,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                 </div>
             </div>,
         },
+        */
     ];
 
     return (
