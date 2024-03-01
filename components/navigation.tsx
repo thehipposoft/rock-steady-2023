@@ -21,8 +21,8 @@ const Navigation = () => {
             <Image
                 alt={'RockSteady Logo'}
                 src={'/assets/logo.png'}
-                width={118}
-                height={64}
+                width={100}
+                height={50}
             />
             <ul className={'justify-center gap-32 hidden md:flex'}>
                 <li>

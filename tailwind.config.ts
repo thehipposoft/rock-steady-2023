@@ -14,6 +14,7 @@ const config: Config = {
         "text-primary": "#080D26",
         "gradient-from": "#B75CFF",
         "gradient-to": "#671AE4",
+        "vermilion": "#5a0220",
       },
       backgroundImage: {
         'texture': "url('/assets/bg-textura.png')",

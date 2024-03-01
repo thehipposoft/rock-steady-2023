@@ -51,7 +51,7 @@ const Mission = () => {
         <section id={"section-mission"} className={'lg:h-screen relative overflow-hidden w-full'}>
             <canvas className="absolute -z-50 w-full" id="canvas-mission" data-colour="#5a02205e"></canvas>
             <div className={'max-w-[1300px] mx-auto p-4 lg:p-12'}>
-                <h2 className={'text-text-primary text-2xl lg:text-6xl text-center 2xl:mb-28 mb-6 lg:mb-10 section-title mt-6 lg:mt-0'}>
+                <h2 className={'text-text-primary text-2xl lg:text-6xl text-center 2xl:mb-20 mb-6 lg:mb-10 section-title mt-6 lg:mt-0'}>
                     DIFFERENT <span className={'section-title-empty text-2xl lg:text-6xl'}>FROM THE REST</span>
                 </h2>
                 <div className={'flex lg:justify-between justify-center flex-wrap'}>

@@ -20,11 +20,11 @@ const Values = () => {
                     <path d="M14.3714 1L13.1333 9.16129L1 11.8817V13.3656L13.1333 16.3333L14.3714 24L16.1048 16.3333L27 13.3656V11.8817L16.1048 9.16129L14.3714 1Z" fill="#080D26" stroke="black"/>
                 </svg>
             </div>
-            <div className={'hidden md:flex flex-wrap justify-center md:p-2 2xl:p-3 flex-grow'}>
+            <div className={'hidden md:grid grid-cols-2 justify-center md:p-2 2xl:p-3 flex-grow gap-12'}>
                 {
                     VALUES.map((v, index) => {
                         return (
-                            <div key={`value-${index}`} className={'group w-1/3 md:p-6 flex flex-col items-center hover:scale-110 transition-all'}>
+                            <div key={`value-${index}`} className={'group col-span-1 p-6 flex flex-col items-center hover:scale-110 transition-all hover:bg-[#5a02200d] rounded-xl '}>
                                 <div className={'bg-[#b40fe71a] rounded-full p-3 icon-border h-24 w-24 mb-4'}>
                                     {v.icon}
                                 </div>
