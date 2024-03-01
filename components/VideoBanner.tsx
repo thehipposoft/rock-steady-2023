@@ -52,7 +52,7 @@ const VideoBanner = () => {
 
     const handleVideoEnd = () => {
         if(videoFinished) {
-            //window.location.href = "/#section-services";
+            window.location.href = "/#section-services";
         }
 
         const video = videoRef.current;
@@ -80,7 +80,7 @@ const VideoBanner = () => {
                 </video>
                 <div className={'md:flex flex-col py-6 md:h-[16%] hidden absolute bottom-0 w-full'}>
                     <Image
-                        src={'/assets/background-pattern.png'}
+                        src={'/assets/background-pattern.svg'}
                         fill
                         alt={'Background Pattern'}
                     />
