@@ -23,7 +23,7 @@ const SchemaOrg = () => {
                             "https://www.linkedin.com/company/rocksteadydigital/",
                             "https://x.com/RockSteadyDigi",
                             "https://www.tiktok.com/@rocksteadydigital",
-                            "https://ar.pinterest.com/rocksteadydigital/",
+                            "https://ar.pinterest.com/rocksteadydigital/"
                         ],
                         "description": "We help organisations with their digital transformation and implement their requirements. We can enhance your company's existing digital capabilities through website and social media development, e-commerce implementations, and digital transformations."
                     }`,
