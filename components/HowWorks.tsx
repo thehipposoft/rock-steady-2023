@@ -16,7 +16,7 @@ const HOW_WORKS: constantsType[] = [
         order: 1,
         title: 'Discover',
         text: <p>
-            The discover phase is where capture requirements, vision and goals of our client and create preliminary concepts and designs and produce a plan deliver the project.
+            The discover phase is where we capture requirements, vision and goals of our client and create preliminary concepts and designs and produce a plan deliver the project.
         </p>,
         image: '/assets/how/discovery.png',
         icon: <svg className={'mb-2 md:mb-6'} fill="#D9B346" width="31" height="31" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.81 481.81">

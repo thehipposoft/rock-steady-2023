@@ -66,7 +66,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
             title: 'People, Culture and Change',
             description: 'We help you to grow your business with our Social Media Marketing & Analytics services.',
             bgImage: '/assets/services/people.png',
-            modalContent: <div className={'grid grid-cols-12 h-full'}>
+            modalContent: <div className={'grid grid-cols-12 h-full w-full'}>
                 <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
                     <Image
                         src={'/assets/services/people-culture-change-modal.png'}
