@@ -16,7 +16,7 @@ const HOW_WORKS: constantsType[] = [
         order: 1,
         title: 'Discover',
         text: <p>
-            A discovery is a preliminary phase that involves <span className={'font-poppins-bold'}>researching the problem space, framing the problem to be solved, and gathering enough evidence</span> and initial direction on what to do next.
+            The discover phase is where capture requirements, vision and goals of our client and create preliminary concepts and designs and produce a plan deliver the project.
         </p>,
         image: '/assets/how/discovery.png',
         icon: <svg className={'mb-2 md:mb-6'} fill="#D9B346" width="31" height="31" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.81 481.81">
@@ -52,7 +52,7 @@ const HOW_WORKS: constantsType[] = [
         order: 4,
         title: 'Action',
         text: <p>
-            Here <span className={'font-poppins-bold'}>the draft solution becomes an actionable</span>. It can be broadly divided into 'Socializing', 'Piloting', and 'Integration'. Socializing is the part where we gain buy-in for the idea and get people on board.
+            Once the digital assets have been built and tested, we take action to keep your media current using updated content, easily found using Seach Engine Optimisation (SEO) and managed using informative analytics and reporting.
         </p>,
         image: '/assets/how/action.png',
         icon: <svg width="29" height="28" className={'mb-2 md:mb-6'} viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@ const HOW_WORKS: constantsType[] = [
         order: 5,
         title: 'Grow',
         text: <p>
-            We follow <span>incremental design and development</span>. We work this way for a different reason – to manage technical risks by breaking big changes down and making small bets instead of big ones.
+            Once your digital assets are live and working for you, we provide consultancy, advice and management to provide continuous improvement to grow your digital assets and your business.
         </p>,
         image: '/assets/how/grow.png',
         icon: <svg width="27" height="25" className={'mb-2 md:mb-6'} viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">

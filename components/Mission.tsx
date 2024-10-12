@@ -60,7 +60,7 @@ const Mission = () => {
                             Our mission
                         </h4>
                         <p className={'mb-4 text-[13px] lg:text-base'}>
-                            Rock Steady Digital's mission is a journey of digital transformation through a journey of creativity and innovation.
+                            Rock Steady Digital's mission is a journey of digital transformation through creativity and innovation.
                         </p>
                         <p className={'text-[13px] lg:text-base'}>
                             We create a fun and energetic environment and work with our clients and partner organisations to deliver outstanding results. We are passionate about helping people and companies succeed through continuous improvement.

@@ -4,7 +4,7 @@ import Image from "next/image";
 const VALUES = [
     {
         title: 'Collaboration',
-        description: 'Create a collaborative environment between people and organisations. Promote people interactions through to gain effectiveness in our communications.',
+        description: 'Create a collaborative environment between people and organisations. Promote people interactions through to gain effective communication.',
         icon: <Image
             width={39}
             height={39}
@@ -14,7 +14,7 @@ const VALUES = [
     },
     {
         title: 'Growth',
-        description: 'Determined to create a better outcome for all through learning new ways of working using technology and non-technology approaches.',
+        description: 'Determined to create a better outcome for all through learning new ways of working using technology and change management approaches.',
         icon: <Image
             width={50}
             height={50}
@@ -34,7 +34,7 @@ const VALUES = [
     },
     {
         title: 'Innovation',
-        description: 'Adaptable in using emerging technology to enhance processes, tools and culture.',
+        description: 'Adaptable in using emerging technology to enhance process, tools and culture.',
         icon:<Image
             width={80}
             height={80}

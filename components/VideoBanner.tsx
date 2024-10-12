@@ -87,7 +87,7 @@ const VideoBanner = () => {
                     <ul className={'flex gap-10 m-auto mb-6'}>
                         <li>
                             <a href={'/#section-services'} className={'py-3 px-4 hover:bottom-0 hover:no-underline group transition-all rounded-3xl hover:bg-primary'}>
-                                SM Marketing & Analytics
+                                Social Media Marketing & Analytics
                             </a>
                         </li>
                         <li>
@@ -99,12 +99,12 @@ const VideoBanner = () => {
                     <ul className={'flex gap-10 m-auto'}>
                         <li>
                             <a href={'/#section-services'} className={' p-3 hover:bottom-0 hover:no-underline group transition-all rounded-3xl hover:bg-primary'}>
-                                Digital Brand Competitor Analysis
+                                Digital Transformation
                             </a>
                         </li>
                         <li>
                             <a href={'/#section-services'} className={'p-3 hover:bottom-0 hover:no-underline group transition-all rounded-3xl hover:bg-primary '}>
-                                Digital Transformation & Program Management
+                                Program Management
                             </a>
                         </li>
                     </ul>

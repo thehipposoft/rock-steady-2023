@@ -136,31 +136,27 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
             </div>,
         },
         {
-            title: 'Digital Transformation & Program Management',
+            title: 'Digital Transformation',
             description: 'We help you to grow your business with our Social Media Marketing & Analytics services.',
             bgImage: '/assets/services/digital-transformation.png',
-            modalContent: <div className={'grid grid-cols-12 h-full'}>
+            modalContent: <div className={'grid grid-cols-12 h-full w-full'}>
                 <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
                     <Image
                         src={'/assets/services/digital-transformation-modal-comp.png'}
                         fill
-                        alt={'Digital Transformation & Program Management'}
+                        alt={'Digital Transformation'}
                         className={'object-cover'}
                     />
                 </div>
                 <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
                     <h2 className={'lg:text-5xl md:text-3xl text-2xl text-primary font-archivo-black mb-6'}>
-                        Digital Transformation & Program Management
+                        Digital Transformation
                     </h2>
-                    <h5 className={'mb-6 text-xl font-poppins-bold'}>
-                        Manifest your digital strategy to realise benefits
-                    </h5>
                     <p className={'text-sm mb-3'}>
-                        We lead digital projects from strategy to implementation through the transformation of people, processes and technology
-    We have the ability to adapt and flexibility to deal with exponential changes in technology.
+                        We lead digital projects from strategy to implementation through the transformation of people, processes and technology.
                     </p>
                     <p className={'text-sm'}>
-                        We have the ability to adapt and flexibility to deal with exponential changes in technology.
+                        We have the ability to adapt and can deal with exponential changes in technology.
                     </p>
                     <button
                         className={'btn-primary mt-20 ml-auto'}
@@ -243,7 +239,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                         We help organisations with their digital transformation and implement their requirements. We can enhance your company's existing digital capabilities through website and social media development, e-commerce implementations, and digital transformations.
                     </p>
                     <p className={'font-semibold text-sm md:text-base'}>
-                        We unite people, processes, tools and data in a creative way that will help your business grow.
+                        We unite people, process, tools and data in a creative way that will help your business grow.
                     </p>
                 </div>
             </div>
