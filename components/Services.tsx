@@ -39,7 +39,7 @@ const Services = () => {
                         className={'object-cover'}
                     />
                 </div>
-                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
+                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col md:justify-center'}>
                     <h2 className={'lg:text-6xl md:text-3xl text-xl text-primary font-archivo-black mb-6'}>
                         Social Media Marketing & Analytics
                     </h2>
@@ -75,7 +75,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                         className={'object-cover'}
                     />
                 </div>
-                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
+                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col md:justify-center'}>
                     <h2 className={'lg:text-6xl md:text-3xl text-2xl text-primary font-archivo-black mb-6'}>
                         People, Culture and Change
                     </h2>
@@ -110,7 +110,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                         className={'object-cover'}
                     />
                 </div>
-                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
+                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col md:justify-center'}>
                     <h2 className={'lg:text-5xl md:text-3xl text-2xl text-primary font-archivo-black mb-6'}>
                         Program Management
                     </h2>
@@ -146,7 +146,7 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
                         className={'object-cover'}
                     />
                 </div>
-                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
+                <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col md:justify-center'}>
                     <h2 className={'lg:text-5xl md:text-3xl text-2xl text-primary font-archivo-black mb-6'}>
                         Digital Transformation
                     </h2>
