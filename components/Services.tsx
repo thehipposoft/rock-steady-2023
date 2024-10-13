@@ -98,40 +98,38 @@ We provide SEO/SEM and Analytics to attract target markets and segments.
             </div>,
         },
         {
-            title: 'Digital Brand Competitor Analysis',
+            title: 'Program Management',
             description: 'We help you to grow your business with our Social Media Marketing & Analytics services.',
             bgImage: '/assets/services/digital-brand.png',
             modalContent:<div className={'grid grid-cols-12 h-full'}>
                 <div className={'col-span-12 md:col-span-4 relative h-[6rem] md:h-auto'}>
                     <Image
-                        src={'/assets/services/competitor-modal.png'}
+                        src={'/assets/services/program-managment.avif'}
                         fill
-                        alt={'Digital Brand Competitor Analysis'}
+                        alt={'Program Management'}
                         className={'object-cover'}
                     />
                 </div>
                 <div className={'p-4 md:p-20 col-span-12 md:col-span-8 mt-0 md:mt-8 flex flex-col justify-center'}>
                     <h2 className={'lg:text-5xl md:text-3xl text-2xl text-primary font-archivo-black mb-6'}>
-                        Digital Brand Competitor Analysis
+                        Program Management
                     </h2>
                     <h5 className={'mb-6 text-xl font-poppins-bold'}>
-                        Use AI and be ahead of your competition
+                        Where vision and strategy materialises into powerful digital assets
                     </h5>
                     <p className={'text-sm mb-3'}>
-                        Business of all type are <span className={'font-semibold underline'}>racing to deploy AI</span> as quick as possible, revolutionising every aspect of their operations and <span className={'font-semibold underline'}>obliterating</span> competitors in the process.
+                        We deliver your digital vision and strategy with dedicated project and program managemt to produce excellent outcomes for your business. Collaborative teams working in a fun environment meeting regularly to track progress and working through realistic plans and budgets.
                     </p>
                     <p className={'text-sm mb-3'}>
-                        If you don't act NOW and make AI your primary ally <span className={'font-semibold underline'}>you'll be on a fast track</span> to empty inboxes, silent phones and a barren customer base, wondering how it all slipped away.
+                        Effective project and program governance structure provides regular reports on progress and updates to make informative decisions.
                     </p>
-                    <p className={'text-sm'}>Use this code and get a $100 discount: <span className={'font-bold'}>RSD100</span></p>
-                    <a href={'https://brand-scientist.com/advantage'} target={'_blank'} className={'hover:bottom-0 hover:no-underline  mt-20 ml-auto'}>
-                        <button
-                            className={'btn-primary'}
-                            onClick={() => {}}
-                        >
-                            Find out more
-                        </button>
-                    </a>
+
+                    <button
+                        className={'btn-primary mt-20 ml-auto'}
+                        onClick={() => handleFindOutMore('Program Management')}
+                    >
+                        Find out more
+                    </button>
                 </div>
             </div>,
         },
