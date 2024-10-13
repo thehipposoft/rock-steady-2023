@@ -39,7 +39,7 @@ const HOW_WORKS: constantsType[] = [
         order: 3,
         title: 'Development',
         text: <p>
-           We specialize in the development of <span className={'font-poppins-bold'}>customized websites</span>, and we put them together tailored to the client's needs.
+           The concepts and designs are developed and tested by our team who collaborate with our client stakeholders to produce the required digital assets ready for release.
         </p>,
         image: '/assets/how/development.png',
         icon:  <svg width="31" height="31" className={'mb-2 md:mb-6'} viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
