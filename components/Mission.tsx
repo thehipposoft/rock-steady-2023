@@ -48,14 +48,14 @@ const Mission = () => {
     },[]);
 
     return (
-        <section id={"section-mission"} className={'lg:h-screen relative overflow-hidden w-full'}>
+        <section id={"section-mission"} className={'relative overflow-hidden w-full'}>
             <canvas className="absolute -z-50 w-full" id="canvas-mission" data-colour="#5a02205e"></canvas>
             <div className={'max-w-[1300px] mx-auto p-4 lg:p-12'}>
                 <h2 className={'text-text-primary text-2xl lg:text-6xl text-center 2xl:mb-20 mb-6 lg:mb-10 section-title mt-6 lg:mt-0'}>
                     DIFFERENT <span className={'section-title-empty text-2xl lg:text-6xl'}>FROM THE REST</span>
                 </h2>
                 <div className={'flex lg:justify-between justify-center flex-wrap'}>
-                    <div className={'max-w-[42rem]'}>
+                    <div className={''}>
                         <h4 className={'text-text-primary mb-4 text-xl lg:text-4xl font-poppins-bold'}>
                             Our mission
                         </h4>
@@ -66,7 +66,7 @@ const Mission = () => {
                             We create a fun and energetic environment and work with our clients and partner organisations to deliver outstanding results. We are passionate about helping people and companies succeed through continuous improvement.
                         </p>
                     </div>
-                    <div className={'transition-all rounded-md shadow-md text-center hover:shadow-xl max-w-[24rem] mt-6 lg:mt-0'}>
+                    <div className={'hidden transition-all rounded-md shadow-md text-center hover:shadow-xl max-w-[24rem] mt-6 lg:mt-0'}>
                         <Image
                             alt={'Kamlesh LAD - Founder'}
                             src={'/assets/kam-home.png'}

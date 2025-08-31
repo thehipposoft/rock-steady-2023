@@ -2,8 +2,11 @@ import React from "react";
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import AboutComponent from "@/components/About";
+import { redirect } from "next/navigation";
 
 const About: NextPage = () => {
+    redirect('/');
+
     return(
         <div>
             <Head>
