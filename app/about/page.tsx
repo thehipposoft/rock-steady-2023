@@ -1,25 +1,32 @@
-import React from "react";
-import type { NextPage } from 'next';
-import Head from 'next/head';
+import type { Metadata } from 'next';
 import AboutComponent from "@/components/About";
-import { redirect } from "next/navigation";
 
-const About: NextPage = () => {
-    redirect('/');
+export const metadata: Metadata = {
+    title: 'About',
+    description:
+        'Learn more about Rock Steady Digital and our mission to help organisations deliver practical digital transformation outcomes.',
+    alternates: {
+        canonical: '/about',
+    },
+    openGraph: {
+        title: 'About Rock Steady Digital',
+        description:
+            'Learn more about Rock Steady Digital and our mission to help organisations deliver practical digital transformation outcomes.',
+        url: '/about',
+        type: 'website',
+    },
+    twitter: {
+        title: 'About Rock Steady Digital',
+        description:
+            'Learn more about Rock Steady Digital and our mission to help organisations deliver practical digital transformation outcomes.',
+    },
+}
 
-    return(
-        <div>
-            <Head>
-                <meta></meta>
-                <title>ROCK STEADY | About me</title>
-            </Head>
-            <main>
-               <AboutComponent />
-            </main>
-            <footer>
-
-            </footer>
-        </div>
+const About = () => {
+    return (
+        <main>
+            <AboutComponent />
+        </main>
     )
 }
 

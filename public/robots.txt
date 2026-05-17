@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Crawl-delay: 10
+
+Host: https://www.rocksteadydigital.com.au
 
 Sitemap: https://www.rocksteadydigital.com.au/sitemap.xml
